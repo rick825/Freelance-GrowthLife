@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Register</title>
+	<link rel="stylesheet" href="register.css">
+	<style>
+		 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
+	</style>
+</head>
+<body>
+
+	<!-- registration section -->
+
+	<section id="reg-log">
+		<div class="reg-log">
+
+			<div class="reg-log-buttons">
+				<ul class="regi-but ">
+					<li class="regs but active">
+						<a class="">Register</a>
+					</li>
+					<li class="logs but">
+						<a  class="">Login</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="logregdiv">
+			<!-- registration section -->
+				<div class="reg com">
+					<div class="reg-info">
+						<form action="" class="reg-info-form">
+							<h2>Enter Below Details:-</h2>
+							<fieldset>
+      <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Email Address" type="email" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Phone Number " type="tel" tabindex="3" required>
+    </fieldset>
+    <fieldset>
+    	 <input placeholder="Enter Password " type="password" tabindex="4" required>
+    </fieldset>
+     <fieldset>
+    	 <input placeholder="Confirm Password " type="password" tabindex="5" required>
+    </fieldset>
+     <h2 class="qual">Enter Your Highest Qualification:-</h2>
+     <fieldset>
+    	 <input placeholder="Enter your Course(eg.BCA,BBA MCA etc)" type="text" tabindex="6" required>
+    </fieldset>
+     <fieldset>
+    	 <input placeholder="Enter Your College/University " type="text" tabindex="7" required>
+    </fieldset>
+     <fieldset>
+     	<label for="date" class="date"> Enter Qualification Date:-</label>
+    	 <input placeholder="Enter Qualification year" type="date" tabindex="8" required>
+    </fieldset>
+   
+    <fieldset>
+      <button name="Register" type="submit" id="Register" data-submit="...Sending">Register & Pay</button>
+    </fieldset>
+						</form>
+					</div>
+					<div class="reg-pr">
+						
+					</div>
+				</div>
+			
+			<!-- end registration section -->
+			<!-- login section -->
+				<div class="log com">
+					<form action="" class="log-info-form">
+							<h2>Enter Login Details:-</h2>
+							<fieldset>
+    <fieldset>
+      <input placeholder="Your Email Address" type="email" tabindex="2" required>
+    </fieldset>
+    <h2 class="or">Or</h2>
+    <fieldset>
+      <input placeholder="Your Phone Number " type="tel" tabindex="3" required>
+    </fieldset>
+    <fieldset>
+    	 <input placeholder="Enter Password " type="password" tabindex="4" required>
+    </fieldset>
+
+    <fieldset>
+      <button name="login" type="submit" id="Login" data-submit="...Sending">Login</button>
+    </fieldset>
+					</form>
+				</div>
+			
+			<!-- end login section -->
+		</div>
+
+		</div>
+	</section>
+
+  <script src="script.js"></script>
+
+  <!-- login swipe script -->
+  <script>
+  	const logSwipe = () =>{
+  		const logBut = document.querySelector('.logs');
+  		const regBut = document.querySelector('.regs');
+  		const logDiv = document.querySelector('.log');
+  		const regDiv = document.querySelector('.reg');
+
+  		logBut.addEventListener('click',()=>{
+           logDiv.classList.add('logshow');
+           regDiv.classList.add('regHide');
+  		});
+
+  		regBut.addEventListener('click',()=>{
+           logDiv.classList.remove('logshow');
+           regDiv.classList.remove('regHide');
+  		});
+  	}
+
+  	logSwipe();
+  </script>
+  <!-- end login swipe script -->
+
+
+</body>
+</html>
