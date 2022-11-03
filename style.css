@@ -13,7 +13,7 @@ html{
 
 body{
 	width: 100%;
-	height: 80rem;
+height: 80rem;
 	overflow: hidden;
 	/*background-color: #222;*/
 	 font-family: 'Josefin Sans', sans-serif;
@@ -36,6 +36,11 @@ body{
  }
 
 /*common*/
+
+.login-head-nav{
+ display: none;
+}
+
 #nav,#profile,#feed{
 	position: relative;
 }
@@ -48,8 +53,12 @@ body{
 	width: 52%;	
 }
 
-#profile{
+.profile-i{
 	width: 28%;
+}
+
+.profile{
+  /*width: 28%;*/
 }
 
 

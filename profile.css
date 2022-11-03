@@ -29,7 +29,7 @@
 }
 
 .login-signup a{
-	width: 15rem;
+	max-width: 100%;
 	padding: 1.2rem;
 	border: 1px solid  #0059b3;
 	letter-spacing: 0.5px;
@@ -62,7 +62,6 @@
  	width: 60%;
  	display: flex;
  	align-items: center;
- 	margin-left: ;
  }
 
  .profile-top .account img{
