@@ -20,41 +20,90 @@
 	transform: translateY(0);
 }
 
-.feed-growth .noty{
-  font-size: 1.5rem;
-  transform: translateY(5rem);
-  background-color: #737373;
-  color: white;
-  padding: 1rem;
-  border-radius: 10px;
-}
+ .top{
+    width: 100%;
+    height: 15%;
+    /*border: 2px solid black;*/
+    font-size: 3rem;
+    display: flex;
+   align-items: center;
+  }
 
-.feed-growth .login-signup{
-  transform: translateY(7rem);
-  display: flex;
-  justify-content: center;
-}
+  .top span{
+    color: #e67300;
+  }
+
+  .head{
+    font-size: 2.5rem;
+    letter-spacing: 0.5px;
+  }
+
+  .bot{
+    width: 100%;
+    height: 80%;
+    padding: 2rem;
+    padding-top: 3.1rem;
+   }
+
+
+   .head{
+    display: flex;
+    align-items:center;
+   }
+
+   .head img{
+    width: 50px;
+    position: relative;
+   }
+
+   .head-img{
+    width: 60px;
+    height: 50px;
+    position: relative;
+   }
+
+
+  .head-img:before{
+    content: "";
+    width: 200%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: orange;
+      border-radius: 20px;
+      transform: translateX(-6.7rem);
+      transition: 0.4s ease;
+   }
+
+
+   .head h1{
+  border-bottom: 2px solid #999999;
+  /*margin-left: 1.5rem;*/
+   }
 
 /* Scrollbar Styling */
-.job-list::-webkit-scrollbar {
+.j-list::-webkit-scrollbar {
     width: 8px;
 }
 
-.job-list::-webkit-scrollbar-track {
+.j-list::-webkit-scrollbar-track {
     background-color: #ebebeb;
     -webkit-border-radius: 10px;
     border-radius: 10px;
 
 }
 
-.job-list::-webkit-scrollbar-thumb {
+.j-list::-webkit-scrollbar-thumb {
     -webkit-border-radius: 20px;
     border-radius: 10px;
   }
 
-.job-list:hover::-webkit-scrollbar-thumb { background: #0059b3;}
-.job-list::-webkit-scrollbar-thumb:horizontal:hover,
-.job-list::-webkit-scrollbar-thumb:vertical:hover { background:  #0059b3; }
+.j-list:hover::-webkit-scrollbar-thumb { background: #0059b3;}
+.j-list::-webkit-scrollbar-thumb:horizontal:hover,
+.j-list::-webkit-scrollbar-thumb:vertical:hover { background:  #0059b3; }
 /*end feed common section*/
 
   /*Dashboard Section*/
@@ -67,77 +116,12 @@
     transform: translateY(0);
   }
 
-  .dash-bot-head{
-  	font-size: 2.5rem;
-  	letter-spacing: 0.5px;
-  }
-
-  .dash-top{
-  	width: 100%;
-  	height: 15%;
-  	/*border: 2px solid black;*/
-    font-size: 3rem;
-    display: flex;
-   align-items: center;
-  }
-
-  .dash-top span{
-  	color: #e67300;
-  }
-
-
-
   /*job section*/
-   .dash-bot{
-   	width: 100%;
-   	height: 80%;
-    padding: 2rem;
-    padding-top: 3.1rem;
-   }
+   
 
 
-   .dash-bot-head{
-   	display: flex;
-   	align-items:center;
-   	/*border-bottom: 2px solid #999999;*/
-   }
 
-   .dash-bot-head img{
-   	width: 50px;
-   	position: relative;
-   }
-
-   .head-img{
-   	width: 60px;
-   	height: 50px;
-   	position: relative;
-   }
-
-
-  .head-img:before{
-   	content: "";
-   	width: 200%;
-   	height: 100%;
-   	position: absolute;
-   	top: 0;
-   	right: 0;
-   	bottom: 0;
-   	left: 0;
-    background-color: orange;
-    	border-radius: 20px;
-    	transform: translateX(-6.7rem);
-    	transition: 0.4s ease;
-   }
-
-  
-
-
-   .dash-bot-head h1{
-	border-bottom: 2px solid #999999;
-	/*margin-left: 1.5rem;*/
-   }
-
-   .job-list{
+   .j-list{
    	width: 100%;
    	height: 100%;
    	margin-top: 2rem;
@@ -261,6 +245,10 @@
         margin-top: 1rem;
        /* font-family: Georgia;*/
       }
+
+      
+   
+
       /*end job description*/
       
       /*job button*/
@@ -287,7 +275,7 @@
           z-index: 1000000;
       }
 
-      .job-button .job-apply{
+       .job-apply{
       	background-color: #0059b3;
       	 color: white;
          z-index: 10000000;
@@ -295,6 +283,10 @@
       
       .job-button .descButton:hover,.job-button .job-apply:hover{
       	transform: scale(1.2);
+      }
+
+      .job-apply-back{
+      background-color: #00cc7a;
       }
 
       /*end job button*/
@@ -306,32 +298,151 @@
   
   /*applied section*/
   .applied{
-   /*background-color: green;*/
+  
   }
+
+  .app-list{
+    margin-top: 2rem;
+    overflow-y: scroll;
+  }
+
+/*job section*/
+
+  .applied .job{
+    /*min-width:22rem;
+    max-width: 34rem;*/
+    max-height: 100%;
+  }
+
+  .applied .job-button{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    transform: translateX(-1rem);
+  }
+
+  .applied .job-button .descButton{
+ 
+  }
+
+ .job-button .j-applied{
+    background-color: #00cc7a;
+  }
+
+  .app-top{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  /*end job section*/
+
   /*end applied section*/
    
+
    /*notification section*/
-   .notification{
-    /*background-color: blue;*/
+   .noti-list{
+    margin-top: 2rem;
+    justify-content: center;
+    height: 120%;
+   }
+ 
+ .noti{
+  width: 92%;
+  min-height: 5rem;
+  padding: 2rem;
+   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 -6px 6px rgba(0,0,0,0.23);
+   border-radius: 20px;
+   margin-top: 2rem;
+ }
+   .n-head h1{
+   font-size: 2rem;
+   }
+
+   .noti .A-lead,.noti .D-lead{
+    background-color:  #00cc7a;
+    width: 100%;
+    padding: 0.7rem;
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem 0rem;
+   }
+
+   .noti .D-lead{
+    background-color: #ff1a1a;
    }
    /*end notification section*/
 
+
    /*about-us section*/
    .about-us{
-   	/*background-color: black;*/
+   width: 100%;
    }
+
+   .about-bot-head{
+    margin-top: 3.8rem;
+   }
+
+   .about-cont{
+    display: flex;
+    margin-top: 6rem;
+   }
+
+   .about-c{
+    width: 50%;
+    /*border: 2px solid black;*/
+   }
+
+
+   .about-us-left{
+    border: 2px solid black;
+    margin: 1rem;
+    height: 50rem;
+   }
+
+   .about-us-right p{
+   font-size: 1.6rem;
+   font-weight:600;
+   letter-spacing: 1.2px;
+   line-height: 2rem;
+   margin-top: 4rem;
+   }
+
+   .about-btn button{
+     padding: 1rem;
+       border-radius: 40px;
+       cursor: pointer;
+       margin-left: 2rem;
+      border-color:transparent;
+       font-weight: 400;
+       letter-spacing: 1px;
+       margin-top: 1rem;
+       transition: 0.2s ease;
+       box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 2px 2px rgba(0,0,0,0.23);
+       background-color: orange;
+   }
+
+
+
+
+
+
    /*end about-us section*/
+
 
    /*contact section*/
    .contact{
-   	/*background-color: red;*/
+   	
    }
    /*end contact section*/
 
+
      /*needhelp section*/
    .need-help{
-   	 /*background-color: crimson;*/
+   	
    }
    /*end needhelp section*/
+
 
 /*end feed section*/

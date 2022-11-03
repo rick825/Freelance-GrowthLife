@@ -20,7 +20,12 @@
 }
 
 .profile-growth-div{
+ font-size: 1.4rem;
+}
 
+.profile-growth-div h2:nth-child(2){
+  margin-left: 1rem;
+  margin-right: 0.3rem;
 }
 
 /*login sign up*/
