@@ -23,11 +23,16 @@
 	/*justify-content: center;*/
 	flex-direction: column;
 	align-items: center;
-	width: 80rem;
-	height: 65rem;
+	width: 60rem;
+	height: 0rem;
 	/*border: 2px solid black;*/
 	margin-top: 5rem;
 	position: relative;
+	transition: 1s ease;
+}
+
+.reg-log-show{
+height: 60rem;
 }
 
 .reg-log-buttons{
@@ -75,7 +80,7 @@
 
 .logregdiv{
 	width: 100%;
-	min-height: 106%;
+	min-height: 120%;
 	display: flex;
 	justify-content: center;
 	position: relative;
@@ -90,6 +95,7 @@
 
 .com{
 	width: 100%;
+	height: 100%;
 	position: relative;
 	min-height: 65rem;
 	border: 2px solid #a6a6a6;
@@ -266,3 +272,53 @@ input[type="date"]{
 	justify-content: center;
 }
 /*end login form*/
+
+/*media queries*/
+ 
+ @media only screen and (max-width: 768px){
+
+.reg-log{
+	width: 30rem;
+  
+
+}
+
+.logregdiv{
+	min-height: 100%;
+  /*overflow-y: scroll;*/
+}
+
+.reg-log-show{
+height: 65rem;
+}
+
+
+.reg{
+	overflow-y: scroll;
+ }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width:  1024px){
+
+
+	.reg-log{
+	width: 50rem;
+  /*height: 65rem;*/
+
+}
+
+.reg-log-show{
+height: 65rem;
+}
+
+.logregdiv{
+	/*min-height: 100%;*/
+  /*overflow-y: scroll;*/
+}
+
+.reg{
+	overflow-y: scroll;
+ }
+
+}

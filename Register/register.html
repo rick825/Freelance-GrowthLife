@@ -88,7 +88,7 @@
     </fieldset>
 
     <fieldset>
-      <button name="login" type="submit" id="Login" data-submit="...Sending">Login</button>
+     <button name="login" type="submit" id="Login" data-submit="...Sending" onclick="window.open('../main/user/index.html')">Login</button>
     </fieldset>
 					</form>
 				</div>
@@ -103,6 +103,13 @@
 
   <!-- login swipe script -->
   <script>
+
+  	window.onload = () =>{
+  	document.querySelector('.reg-log').classList.add('reg-log-show');
+   	logSwipe();
+
+  	}
+
   	const logSwipe = () =>{
   		const logBut = document.querySelector('.logs');
   		const regBut = document.querySelector('.regs');
@@ -120,7 +127,7 @@
   		});
   	}
 
-  	logSwipe();
+  
   </script>
   <!-- end login swipe script -->
 

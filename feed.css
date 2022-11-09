@@ -20,6 +20,21 @@
 	transform: translateY(0);
 }
 
+.feed-growth .noty{
+  font-size: 1.5rem;
+  transform: translateY(5rem);
+  background-color: #737373;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.feed-growth .login-signup{
+  transform: translateY(7rem);
+  display: flex;
+  justify-content: center;
+}
+
 /* Scrollbar Styling */
 .job-list::-webkit-scrollbar {
     width: 8px;
@@ -139,7 +154,7 @@
 
    .job{
    	position: relative;
-   	min-width: 30rem;
+   	min-width:22rem;
    	max-width: 34rem;
    	min-height: 34rem;
    	/*border: 2px solid black;*/
@@ -246,10 +261,6 @@
         margin-top: 1rem;
        /* font-family: Georgia;*/
       }
-
-      
-   
-
       /*end job description*/
       
       /*job button*/
@@ -273,11 +284,13 @@
 
       .job-button .descButton{
           background-color: orange;
+          z-index: 1000000;
       }
 
       .job-button .job-apply{
       	background-color: #0059b3;
       	 color: white;
+         z-index: 10000000;
       }
       
       .job-button .descButton:hover,.job-button .job-apply:hover{
@@ -293,31 +306,31 @@
   
   /*applied section*/
   .applied{
-   background-color: green;
+   /*background-color: green;*/
   }
   /*end applied section*/
    
    /*notification section*/
    .notification{
-    background-color: blue;
+    /*background-color: blue;*/
    }
    /*end notification section*/
 
    /*about-us section*/
    .about-us{
-   	background-color: black;
+   	/*background-color: black;*/
    }
    /*end about-us section*/
 
    /*contact section*/
    .contact{
-   	background-color: red;
+   	/*background-color: red;*/
    }
    /*end contact section*/
 
      /*needhelp section*/
    .need-help{
-   	 background-color: crimson;
+   	 /*background-color: crimson;*/
    }
    /*end needhelp section*/
 

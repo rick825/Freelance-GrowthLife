@@ -20,7 +20,12 @@
 }
 
 .profile-growth-div{
+ font-size: 1.4rem;
+}
 
+.profile-growth-div h2:nth-child(2){
+  margin-left: 1rem;
+  margin-right: 0.3rem;
 }
 
 /*login sign up*/
@@ -117,6 +122,33 @@
   	/*color: ;*/
     height: 100%;
   }
+
+  .profile-card .curr-loc{
+    margin-top: 2.5rem;
+  }
+
+  .profile-card .curr-loc,.profile-card .profile-rec-edu{
+    display: flex;
+    align-items: center;
+  }
+
+  .profile-card .left-card img{
+    margin-right: 1rem;
+    width: 20px;
+  }
+
+   .profile-card .profile-rec-edu .rec-edu-info{
+      margin-top: 1.3rem;
+     }
+
+      .profile-card .profile-rec-edu .rec-edu-info p{
+         font-weight: 600;
+         font-size: 1.2rem;
+      }
+
+      .profile-card .profile-rec-edu .rec-edu-info h3{
+         margin-top: 0.5rem;
+      }
   
   
   #name{

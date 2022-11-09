@@ -74,6 +74,7 @@ height: 80rem;
 
 /*nav section*/
 
+
  .nav{
  	display: flex;
  	align-items: center;
@@ -83,6 +84,10 @@ height: 80rem;
 
  .nav-head{
  	font-size: 2.5rem;
+ }
+
+ .nav-account{
+  display: none;
  }
 
  .nav-head a{
@@ -171,5 +176,16 @@ height: 80rem;
  }
 
 /*end nav section*/
+
+/*profile dropdown*/
+.drop-op{
+  position: absolute;
+  z-index: 100000;
+  top: 10%;
+  right: 10%;
+}
+/*end profile dropdown*/
+
+
 
 
