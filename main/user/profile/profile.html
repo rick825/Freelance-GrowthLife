@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Your Profile</title>
+	<link rel="stylesheet" href="profile.css">
+	<link rel="stylesheet" href="profileMobile.css">
+	<style>
+		 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
+		 /*back button*/
+		 .back{
+         /* position: fixed;
+          left: 1rem;
+          top: 1rem;*/
+		 }
+
+      .btn button {
+      	background-color: #0059b3;
+      	 color: white;
+         z-index: 10000000;
+         border-radius: 10px;
+         padding: 1rem;
+         border-color: transparent;
+         cursor: pointer;
+         margin: 1rem;
+         transition: 0.2s ease;
+      }
+
+      .btn button:hover{
+      	transform: scale(1.1);
+      }
+      /*end back button*/
+
+      /*edit profile button*/
+       .edit-profile{
+       	position: absolute;
+         z-index: 100000;
+         top: 125%;
+         left: 32%;
+       }
+
+       /*end edit profile button*/
+       @media  only screen and (max-width: 992px){
+       	 .edit-profile{
+       	 	top: 70%;
+        left: 70%;
+   }
+       }
+	</style>
+</head>
+<body>
+
+	<section id="nav">
+		<div class="nav">
+			 <div class="back btn">
+		     <a href="../index.html"><button>Back</button></a>
+	       </div>
+	       <div class="nav-head">
+	       	<h1><a href=""><span> </span>Growth Life</a></h1>
+	       </div>
+			<div class="edit-profile btn">
+				 <a href="editPro.html"><button>Edit profile</button></a>
+			</div>
+		</div>
+	</section>
+
+	<!-- <h1> This file is under construction</h1> -->
+<section id="profile-main">
+	<div class="profile-main">
+
+           
+		<div class="profile-left prof">
+				
+				<!-- profile left top division -->
+			<div class="profile-left-top ptb">
+
+                 <div class="profile-pic">
+             	 <img src="icon/profile.png" alt="">
+                 </div>
+
+                 <div class="profile-u-info">
+             	<div class="profile-name">
+             		<h2>Akash Kumar Das</h2>
+             	</div>
+             	<div class="curr-loc">
+             		<img src="icon/loc.png" alt="">
+                    <h3>Ranchi</h3>
+               	</div>
+                <div class="profile-rec-edu">
+             		<div class="profile-rec-edu-img">
+             			<img src="icon/clg.png" alt="">
+             		</div>
+             		<div class="pro rec-edu-info">
+             		<p>Bachelors Of Computer Application</p>
+             		<h3>Usha Martin University</h3>
+             		</div>
+             	 </div>
+               </div>
+
+             </div>
+              <!-- end profile left top division -->
+
+              <div class="profile-left-bot ptb">
+              	<div class="profile-left-bot-head">
+              		<img src="icon/card.png" alt="">
+              		<h2>Your Card</h2>
+              	</div>
+              	<div class="profile-card">
+        				<div class="left-card">
+
+        				<div class="left-cont">
+        						<h2 id="name">Akash Kumar Das</h2>
+        					<div class="curr-loc">
+             	            	<img src="icon/loc.png" alt="">
+                              <h3>Ranchi</h3>
+               	  </div>
+                       <div class="profile-rec-edu">
+             		        <div class="profile-rec-edu-img">
+             		      	<img src="icon/clg.png" alt="">
+             	            </div>
+             		        <div class="pro rec-edu-info">
+             		        <p>Bachelors Of Computer Application</p>
+             	          	<h3>Usha Martin University</h3>
+             	       	 </div>
+             	      </div>   
+        				</div>
+        					
+        				</div>
+        				<div class="right-card">
+        					<img src="icon/profile.png" alt="">
+        				</div>
+        			</div>
+              </div>
+
+			</div>
+
+			<div class="profile-right prof">
+				<div class="inforight">
+
+				<div class="intro props">
+					<div class="info-head">
+						<img src="icon/desc.png" >
+						<h2>About</h2>
+					</div>
+					<p>- We are looking for an Executive Assistant to perform a variety of administrative tasks and support our company’s senior-level managers.- We are looking for an Executive Assistant to perform a variety of administrative tasks and support our company’s senior-level managers.</p>
+				   </div>
+
+				    <div class="Skills props">
+					    <div class="info-head">
+						  <img src="icon/skil.png">
+						  <h2>Skills and Hobbies</h2>
+					    </div>
+					    <div class="sh-list props-cont">
+					   <ul>
+						 <li>Coding</li>
+						 <li>Java</li>
+						 <li>C++</li>
+						 <li>Reading Books</li>
+					   </ul>
+					   </div>
+				    </div>
+
+				    <div class="Resume props">
+					    <div class="info-head">
+						  <img src="icon/resume.png">
+						  <h2>Resumes</h2>
+					    </div>
+					   <div class="up-resume props-cont btn">
+					    <form action="/action_page.php">
+                          <input type="file" id="myFile" name="filename">
+                          <button>Submit</button>
+                          </form>
+					   </div>
+				    </div>
+ 
+				</div>
+			</div>
+			
+		</div>
+	</section>
+
+
+</body>
+</html>
