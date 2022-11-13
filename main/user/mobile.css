@@ -369,6 +369,63 @@
    /*notification section*/
 
    /*end notification section*/
+   
+/*   about section*/
+/* about us*/
 
+.about-us{
+ 
+
+}
+
+.about-cont{
+  flex-direction: column;
+  overflow-y: scroll;
+  margin-top: 0;
+/*  height: 40rem;*/
+height: 50rem;
+ overflow-x: hidden;
+ margin: 2rem;
+}
+
+ .about-bot-head{
+    margin-top: 0rem;
+   }
+
+.about-us-l-cont{
+  display: none;
+}
+
+
+
+.about-img{
+  display: block;
+}
+
+.about-img img{
+  width: 80%;
+}
+
+.about-c{
+  width: 100%;
+}
+
+ .ab-1,.ab-2{
+  width: 10rem;
+  height: 15rem;
+ }
+
+  .about-us-right{
+    padding-bottom: 5rem;
+  }
+
+ .about-us-right p{
+  margin-top: 0;
+  font-size: 1.2rem;
+ }
+
+
+/*end about us*/
+/*end about section*/
 
 }

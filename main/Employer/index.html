@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>USER: Growth life</title>
+	<title>Employer: Growth life</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="feed.css">
 	<link rel="stylesheet" href="profile.css">
@@ -24,14 +24,16 @@
 			<div class="nav main-growth">
 				
 		<div class="nav-head">
+			  <div class="sign-out job-button btn">
+              	<a href="../../index.html"><button id="sign-out" class="sign-out job-apply">Sign Out</button></a>
+              </div>
 					<div class="n-head">
 					<h1><a href=""><span> </span>Growth Life</a></h1>
 						</div>
 						 <div class="profile-growth-div account nav-account">
-              	 <h2>Welcome, </h2>
-              	 <h2 id="w-name">Akash</h2>
               	<a href="profile/profile.html"><img src="images/icons/profile.png" alt=""></a>
               </div>
+
 
 		</div>
 				<div class="nav-main">
@@ -42,7 +44,7 @@
 					</li>
 					<li class="navitem" onclick="feedScript();">
 						<img src="images/icons/user.png" alt="">
-						<p>Applied</p>
+						<p>Jobs</p>
 					</li>
 						<li class="navitem" onclick="feedScript();">
 						<img src="images/icons/noti.png" alt="">
@@ -75,25 +77,46 @@
                  <div class="dashboard feed-growth">
                  	
                  	<div class="dash-top top">
-                 		<h2>Find Your <span>Dream Job </span>Here....</h2>
-                 	</div>
+                 		<h2>Get Your <span>Skillfull Candidate </span>Here....</h2>
+                </div>
 
                  	<!-- job section -->
                  	<div class="dash-bot bot">
 
-                     <div class="dash-bot-head head">
+                 		 <div class="dash-bot-head head">
                      	<div class="head-img">
                      		<img src="images/icons/jobs.png" alt="">
                      	</div>
                      	<div class="head-title">
-                     		<h1>Available Jobs</h1>
+                     		<h1>Jobs Listed By You</h1>
                      	</div>
                      </div>
+
+                     <!-- cap  -->
+				
+				      <div aria-label="Create a post" class="cap68 col">
+					    <div class="row1">
+						<img src="images/icons/profile.png" alt="" class="cir71">
+							<a href="add-post/addpost-form.html"><p class="imga rowbtn inputcap">Click Here To Post Your Job </p></a>
+					  </div>
+					  </div>
+					<!-- end cap -->
+                 		
                  		<div class="job-list j-list">
 
                       <!-- job div -->
 
                  			 <div class="job job1">
+
+                 			 	<div class="job-menu">
+                 			 		<img src="images/icons/menu.png" alt="">
+                 			 	</div>
+                 			 	<div class="jobmenu-list">
+                 			 		<ul>
+                 			 			<li><a href="add-post/editpost-form.html">Edit</a></li>
+                 			 			<li><a href="">Delete</a></li>
+                 			 		</ul>
+                 			 	</div>
 
                  			 	 <h1 class="job-title">Job Title</h1>
                  			 	 <p class="job-company">Company Name</p>
@@ -120,15 +143,25 @@
                  			 	  	
                  			 	  </div>     
                  			 	   <div class="job-button">
-                 			 	  <a href="description.html"><button  id="textButton" class="descButton" >Show More Description</button></a>
-                 			 	 
-                 			 	  	<button class="job-apply">Apply</button>
+                 			 	  <a href="description.html"><button id="textButton" class="descButton" >See Full Description</button></a>
                  			 	  </div>
 
                  			 </div>
                         <!-- end job div -->
+                         <!-- job div -->
 
-                 			  <div class="job job2">
+                 			 <div class="job job1">
+
+                 			 	<div class="job-menu">
+                 			 		<img src="images/icons/menu.png" alt="" onclick="job-menu();">
+                 			 	</div>
+                 			 	<div class="jobmenu-list">
+                 			 		<ul>
+                 			 			<li><a href="">Edit</a></li>
+                 			 			<li><a href="">Delete</a></li>
+                 			 		</ul>
+                 			 	</div>
+
                  			 	 <h1 class="job-title">Job Title</h1>
                  			 	 <p class="job-company">Company Name</p>
                  			 	  <p class="job-location">Location</p>
@@ -145,158 +178,21 @@
                  			 	  </div>
                                  
                                  
-                 			 	       
+                 			 	     
                  			 	  <div class="desc">
                  			 	  	<h2>Job Description</h2>
                  			 	  	<p class="job-description">- We are looking for an Executive Assistant to perform a variety of administrative tasks and support our company’s senior-level managers.
                  			 	  <span id="points" class="points">.....</span>
                  			 	  	</p>
-                 			 	  	 
-                 			 	  </div>
-
+                 			 	  	
+                 			 	  </div>     
                  			 	   <div class="job-button">
-                 			 	 <a href="description.html"><button  id="textButton" class="descButton" >Show More Description</button></a>
-                 			 	 
-                 			 	  	<button  class="job-apply">Apply</button>
-                 			 	  </div>
-                 			 
-                 		</div>
-
-
-                 			 	   <div class="job job3">
-                 			 	 <h1 class="job-title">Job Title</h1>
-                 			 	 <p class="job-company">Company Name</p>
-                 			 	  <p class="job-location">Location</p>
-
-                 			 	  <div class="job-s">
-                 			 	  	 <div class="job-money-div">
-                 			 	  	 	<img src="images/icons/money.png" alt="">
-                 			 	  	 <p class="job-money">Money</p>
-                 			 	  	 </div>
-                 			 	  	 <div class="job-type-div">
-                 			 	  	 	<img src="images/icons/job-type.png" alt="">
-                 			 	  	 	<p class="job-type">Type</p>
-                 			 	  	 </div>
-                 			 	  </div>
-                                 
-                                 
-                 			 	       
-                 			 	  <div class="desc">
-                 			 	  	<h2>Job Description</h2>
-                 			 	  	<p class="job-description">- We are looking for an Executive Assistant to perform a variety of administrative tasks and support our company’s senior-level managers.
-                 			 	  <span id="points" class="points">.....</span>
-                 			 	  	</p>
-                 			 	  	 
+                 			 	  <a href="description.html"><button id="textButton" class="descButton" >See Full Description</button></a>
                  			 	  </div>
 
-                 			 	   <div class="job-button">
-                 			 	 <a href="description.html"><button  id="textButton" class="descButton" >Show More Description</button></a>
-                 			 	 
-                 			 	  	<button  class="job-apply">Apply</button>
-                 			 	  </div>  
                  			 </div>
-
-                 			  <div class="job job5">
-                 			 	 <h1 class="job-title">Job Title</h1>
-                 			 	 <p class="job-company">Company Name</p>
-                 			 	  <p class="job-location">Location</p>
-
-                 			 	  <div class="job-s">
-                 			 	  	 <div class="job-money-div">
-                 			 	  	 	<img src="images/icons/money.png" alt="">
-                 			 	  	 <p class="job-money">Money</p>
-                 			 	  	 </div>
-                 			 	  	 <div class="job-type-div">
-                 			 	  	 	<img src="images/icons/job-type.png" alt="">
-                 			 	  	 	<p class="job-type">Type</p>
-                 			 	  	 </div>
-                 			 	  </div>
-                                 
-                                 
-                 			 	       
-                 			 	  <div class="desc">
-                 			 	  	<h2>Job Description</h2>
-                 			 	  	<p class="job-description">- We are looking for an Executive Assistant to perform a variety of administrative tasks and support our company’s senior-level managers.
-                 			 	  <span id="points" class="points">.....</span>
-                 			 	  	</p>
-                 			 	  	 
-                 			 	  </div>
-
-                 			 	   <div class="job-button">
-                 			 	   <a href="description.html"><button  id="textButton" class="descButton" >Show More Description</button></a>
-                 			 	 
-                 			 	  	<button class="job-apply">Apply</button>
-                 			 	  </div>  
-                 			 </div>
-
-
-                 			  <div class="job job6">
-                 			 	 <h1 class="job-title">Job Title</h1>
-                 			 	 <p class="job-company">Company Name</p>
-                 			 	  <p class="job-location">Location</p>
-
-                 			 	  <div class="job-s">
-                 			 	  	 <div class="job-money-div">
-                 			 	  	 	<img src="images/icons/money.png" alt="">
-                 			 	  	 <p class="job-money">Money</p>
-                 			 	  	 </div>
-                 			 	  	 <div class="job-type-div">
-                 			 	  	 	<img src="images/icons/job-type.png" alt="">
-                 			 	  	 	<p class="job-type">Type</p>
-                 			 	  	 </div>
-                 			 	  </div>
-                                 
-                                 
-                 			 	       
-                 			 	  <div class="desc">
-                 			 	  	<h2>Job Description</h2>
-                 			 	  	<p class="job-description">- We are looking for an Executive Assistant to perform a variety of administrative tasks and support our company’s senior-level managers.
-                 			 	  <span id="points" class="points">.....</span>
-                 			 	  	</p>
-                 			 	  	 
-                 			 	  </div>
-
-                 			 	   <div class="job-button">
-                 			 	  <a href="description.html"><button  id="textButton" class="descButton" >Show More Description</button></a>
-                 			 	 
-                 			 	  	<button class="job-apply">Apply</button>
-                 			 	  </div>  
-                 			 </div>
-
-
-                 			  <div class="job job4">
-                 			 	 <h1 class="job-title">Job Title</h1>
-                 			 	 <p class="job-company">Company Name</p>
-                 			 	  <p class="job-location">Location</p>
-
-                 			 	  <div class="job-s">
-                 			 	  	 <div class="job-money-div">
-                 			 	  	 	<img src="images/icons/money.png" alt="">
-                 			 	  	 <p class="job-money">Money</p>
-                 			 	  	 </div>
-                 			 	  	 <div class="job-type-div">
-                 			 	  	 	<img src="images/icons/job-type.png" alt="">
-                 			 	  	 	<p class="job-type">Type</p>
-                 			 	  	 </div>
-                 			 	  </div>
-                                 
-                                 
-                 			 	       
-                 			 	  <div class="desc">
-                 			 	  	<h2>Job Description</h2>
-                 			 	  	<p class="job-description">- We are looking for an Executive Assistant to perform a variety of administrative tasks and support our company’s senior-level managers.
-                 			 	  <span id="points" class="points">.....</span>
-                 			 	  	</p>
-                 			 	  	 
-                 			 	  </div>
-
-                 			 	   <div class="job-button">
-                 			 	  <a href="description.html"><button  id="textButton" class="descButton" >Show More Description</button></a>
-                 			 	 
-                 			 	  	<button class="job-apply">Apply</button>
-                 			 	  </div>  
-                 			 </div>
-
+                        <!-- end job div -->
+                          
                  	</div>
                  	<!-- end job section -->
                  </div>         	
@@ -308,7 +204,7 @@
             	<div class="applied feed-growth">
             		
             	<div class="app-top top">
-                 		<h2>Jobs You Have <span>Applied For </span> Here....</h2>
+                 		<h2>Jobs You Have <span>Posted </span> </h2>
                 </div>
                    <div class="app-bot bot">
                   <div class="app-bot-head head">
@@ -321,6 +217,7 @@
                      </div>
                      
                    <div class="app-list j-list">
+
                    	  <!-- job div -->
 
                  			 <div class="job job1">
@@ -339,28 +236,32 @@
                  			 	  	 	<p class="job-type">Type</p>
                  			 	  	 </div>
                  			 	  </div>
-                                 
-                                 
-                 			 	     
-                 			 	  <div class="desc">
-                 			 	  	<h2>Job Description</h2>
-                 			 	  	<p class="job-description">- We are looking for an Executive Assistant to perform a variety of administrative tasks and support our company’s senior-level managers.
-                 			 	  <span id="points" class="points">.....</span>
-                 			 	  	</p>
-                 			 	  	
-                 			 	  </div>     
-                 			 	   <div class="job-button">
-                 			 	   		<button class="job-apply j-applied">Applied</button>
-                 			 	  <button  id="textButton" class="descButton" >Show More Description</button>
-                 			 	 
-                 			 	  
+                 			 	  <div class="people-j">
+                 			 	  	<div class="pj1 pj">
+                 			 	  		<img src="images/icons/user.png" alt="">
+                 			 	  	</div>
+                 			 	  	<div class="pj2 pj">
+                 			 	  		<img src="images/icons/user.png" alt="">
+                 			 	  	</div>
+                 			 	  	<div class="pj3 pj">
+                 			 	  		<img src="images/icons/user.png" alt="">
+                 			 	  	</div>
+                 			 	  	<div class="p-dot">
+                 			 	  		<p>And
+                 			 	  		<span id="totalPeople">10</span>
+                 			 	  		Others have Applied</p>
+                 			 	  	</div>
                  			 	  </div>
+                 			 	   <div class="job-button">
+                 			 	<a href="seeWhoApp.html"><button  id="textButton" class="descButton" >See Who Applied</button>
+                 			 	  </div></a> 
 
                  			 </div>
                         <!-- end job div -->
+
                           <!-- job div -->
 
-                 			 <div class="job job2">
+                 			 <div class="job job1">
 
                  			 	 <h1 class="job-title">Job Title</h1>
                  			 	 <p class="job-company">Company Name</p>
@@ -376,28 +277,32 @@
                  			 	  	 	<p class="job-type">Type</p>
                  			 	  	 </div>
                  			 	  </div>
-                                 
-                                 
-                 			 	     
-                 			 	  <div class="desc">
-                 			 	  	<h2>Job Description</h2>
-                 			 	  	<p class="job-description">- We are looking for an Executive Assistant to perform a variety of administrative tasks and support our company’s senior-level managers.
-                 			 	  <span id="points" class="points">.....</span>
-                 			 	  	</p>
-                 			 	  	
-                 			 	  </div>     
-                 			 	   <div class="job-button">
-                 			 	   		<button class="job-apply j-applied">Applied</button>
-                 			 	  <button  id="textButton" class="descButton" >Show More Description</button>
-                 			 	 
-                 			 	  
+                 			 	  <div class="people-j">
+                 			 	  	<div class="pj1 pj">
+                 			 	  		<img src="images/icons/user.png" alt="">
+                 			 	  	</div>
+                 			 	  	<div class="pj2 pj">
+                 			 	  		<img src="images/icons/user.png" alt="">
+                 			 	  	</div>
+                 			 	  	<div class="pj3 pj">
+                 			 	  		<img src="images/icons/user.png" alt="">
+                 			 	  	</div>
+                 			 	  	<div class="p-dot">
+                 			 	  		<p>And
+                 			 	  		<span id="totalPeople">10</span>
+                 			 	  		Others have Applied</p>
+                 			 	  	</div>
                  			 	  </div>
+                 			 	   <div class="job-button">
+                 			 	<a href="seeWhoApp.html"><button  id="textButton" class="descButton" >See Who Applied</button>
+                 			 	  </div></a> 
 
                  			 </div>
                         <!-- end job div -->
-                         <!-- job div -->
 
-                 			 <div class="job job2">
+                          <!-- job div -->
+
+                 			 <div class="job job1">
 
                  			 	 <h1 class="job-title">Job Title</h1>
                  			 	 <p class="job-company">Company Name</p>
@@ -413,27 +318,71 @@
                  			 	  	 	<p class="job-type">Type</p>
                  			 	  	 </div>
                  			 	  </div>
-                                 
-                                 
-                 			 	     
-                 			 	  <div class="desc">
-                 			 	  	<h2>Job Description</h2>
-                 			 	  	<p class="job-description">- We are looking for an Executive Assistant to perform a variety of administrative tasks and support our company’s senior-level managers.
-                 			 	  <span id="points" class="points">.....</span>
-                 			 	  	</p>
-                 			 	  	
-                 			 	  </div>     
-                 			 	   <div class="job-button">
-                 			 	   		<button class="job-apply j-applied">Applied</button>
-                 			 	  <button  id="textButton" class="descButton" >Show More Description</button>
-                 			 	 
-                 			 	  
+                 			 	  <div class="people-j">
+                 			 	  	<div class="pj1 pj">
+                 			 	  		<img src="images/icons/user.png" alt="">
+                 			 	  	</div>
+                 			 	  	<div class="pj2 pj">
+                 			 	  		<img src="images/icons/user.png" alt="">
+                 			 	  	</div>
+                 			 	  	<div class="pj3 pj">
+                 			 	  		<img src="images/icons/user.png" alt="">
+                 			 	  	</div>
+                 			 	  	<div class="p-dot">
+                 			 	  		<p>And
+                 			 	  		<span id="totalPeople">10</span>
+                 			 	  		Others have Applied</p>
+                 			 	  	</div>
                  			 	  </div>
+                 			 	   <div class="job-button">
+                 			 	<a href="seeWhoApp.html"><button  id="textButton" class="descButton" >See Who Applied</button>
+                 			 	  </div></a> 
 
                  			 </div>
                         <!-- end job div -->
-                   </div>
-                   </div>
+
+                          <!-- job div -->
+
+                 			 <div class="job job1">
+
+                 			 	 <h1 class="job-title">Job Title</h1>
+                 			 	 <p class="job-company">Company Name</p>
+                 			 	  <p class="job-location">Location</p>
+
+                 			 	  <div class="job-s">
+                 			 	  	 <div class="job-money-div">
+                 			 	  	 	<img src="images/icons/money.png" alt="">
+                 			 	  	 <p class="job-money">Money</p>
+                 			 	  	 </div>
+                 			 	  	 <div class="job-type-div">
+                 			 	  	 	<img src="images/icons/job-type.png" alt="">
+                 			 	  	 	<p class="job-type">Type</p>
+                 			 	  	 </div>
+                 			 	  </div>
+                 			 	  <div class="people-j">
+                 			 	  	<div class="pj1 pj">
+                 			 	  		<img src="images/icons/user.png" alt="">
+                 			 	  	</div>
+                 			 	  	<div class="pj2 pj">
+                 			 	  		<img src="images/icons/user.png" alt="">
+                 			 	  	</div>
+                 			 	  	<div class="pj3 pj">
+                 			 	  		<img src="images/icons/user.png" alt="">
+                 			 	  	</div>
+                 			 	  	<div class="p-dot">
+                 			 	  		<p>And
+                 			 	  		<span id="totalPeople">10</span>
+                 			 	  		Others have Applied</p>
+                 			 	  	</div>
+                 			 	  </div>
+                 			 	   <div class="job-button">
+                 			 	<a href="seeWhoApp.html"><button  id="textButton" class="descButton" >See Who Applied</button>
+                 			 	  </div></a> 
+
+                 			 </div>
+                        <!-- end job div -->
+
+                   </div></div>
 
             	</div>
             </section>
@@ -457,42 +406,91 @@
 
                      <div class="noti-list j-list">
                      	
-                     	<!-- noti Accept section -->
+                     	<!-- noti respond section -->
                      	 <div class="noti noti1">
                            <div class="n-head">
                            	<h1 class="job-title">Job Title</h1>
-                 			 	 <p class="job-company">Company Name</p>
                            </div>
                            <div class="n-head-lead">
-                           <h2 class="A-lead">Accepted</h2>
+                             <div class="n-profile">
+                             	<div class="pn">
+                             		<img src="images/icons/profile.png" alt="">
+                             	</div>
+                             	<div class="pntext">
+                             		<h2>Akash Kumar Das</h2>
+                             	</div>
+                             </div>
+                             <div class="n-button">
+                             	<a href="user-profile/userprofile.html"><button>Respond</button></a>
+                             </div>
                            </div>
                      	</div>
                      	<!-- end noti section -->
-
-                     	<!-- noti Decline section -->
-                     	<div class="noti noti2">
+                     		<!-- noti respond section -->
+                     	 <div class="noti noti1">
                            <div class="n-head">
                            	<h1 class="job-title">Job Title</h1>
-                 			 	 <p class="job-company">Company Name</p>
                            </div>
                            <div class="n-head-lead">
-                           <h2 class="D-lead">Declined</h2>
+                             <div class="n-profile">
+                             	<div class="pn">
+                             		<img src="images/icons/profile.png" alt="">
+                             	</div>
+                             	<div class="pntext">
+                             		<h2>Akash Kumar Das</h2>
+                             	</div>
+                             </div>
+                             <div class="n-button">
+                             	<a href="user-profile/userprofile.html"><button>Respond</button></a>
+                             </div>
                            </div>
                      	</div>
-                     	<!-- end noti Decline Section -->
-
-                     	<div class="noti noti2">
+                     	<!-- end noti section -->
+                     		<!-- noti respond section -->
+                     	 <div class="noti noti1">
                            <div class="n-head">
                            	<h1 class="job-title">Job Title</h1>
-                 			 	 <p class="job-company">Company Name</p>
                            </div>
                            <div class="n-head-lead">
-                           <h2 class="D-lead">Declined</h2>
+                             <div class="n-profile">
+                             	<div class="pn">
+                             		<img src="images/icons/profile.png" alt="">
+                             	</div>
+                             	<div class="pntext">
+                             		<h2>Akash Kumar Das</h2>
+                             	</div>
+                             </div>
+                             <div class="n-button">
+                             	<a href="user-profile/userprofile.html"><button>Respond</button></a>
+                             </div>
                            </div>
                      	</div>
+                     	<!-- end noti section -->
+                     		<!-- noti respond section -->
+                     	 <div class="noti noti1">
+                           <div class="n-head">
+                           	<h1 class="job-title">Job Title</h1>
+                           </div>
+                           <div class="n-head-lead">
+                             <div class="n-profile">
+                             	<div class="pn">
+                             		<img src="images/icons/profile.png" alt="">
+                             	</div>
+                             	<div class="pntext">
+                             		<h2>Akash Kumar Das</h2>
+                             	</div>
+                             </div>
+                             <div class="n-button">
+                             	<a href="user-profile/userprofile.html"><button>Respond</button></a>
+                             </div>
+                           </div>
+                     	</div>
+                     	<!-- end noti section -->
+                     	
 
                      </div>
             	</div>
+            </div>
             </section>
             <!-- end notification section -->
 
@@ -510,10 +508,10 @@
                     
                     <div class="about-cont">
                      <!-- about us left -->
-                      <div class="about-img">
+                     <div class="about-us-left about-c">  
+                     <div class="about-img">
                      	<img src="images/about/main.PNG" alt="">
-                     </div>
-                     <div class="about-us-left about-c">    
+                     </div>  
                              <div class="about-us-l-cont">
                                	 <div class="ab-1 abc">
                                	 	
@@ -575,7 +573,7 @@
         		<div class="profile-top profile-growth">
               <div class="profile-growth-div account">
               	 <h2>Welcome, </h2>
-              	 <h2 id="w-name">Akash</h2>
+              	 <!-- <h2 id="w-name">Akash</h2> -->
               	<a href="profile/profile.html"><img src="images/icons/profile.png" alt=""></a> 
               </div>
 
@@ -601,10 +599,13 @@
              		      	<img src="profile/icon/clg.png" alt="">
              	            </div>
              		        <div class="pro rec-edu-info">
-             		        <p>Bachelors Of Computer Application</p>
-             	          	<h3>Usha Martin University</h3>
+             	          	<h3>IT Company</h3>
              	       	 </div>
-             	      </div>     
+             	      </div>    
+
+             	      <div class="profile-edu-bot">
+             	      	<h2>Employer Card</h2>
+             	      </div> 
         					</div>
         					
         				</div>
@@ -619,9 +620,6 @@
         	</div>
         </section>
         <!-- end profile section -->
-      
-
-
 
 	</div>
 	</section>
@@ -681,6 +679,7 @@
 	<Script src="Script.js"></Script>
 	<Script src="feedScript.js"></Script>
 	<Script src="profile.js"></Script>
+	<Script src="job-menu.js"></Script>
 
 
 

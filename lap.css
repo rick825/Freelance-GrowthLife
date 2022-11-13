@@ -121,6 +121,17 @@
      	font-size: 1.1rem; 
      	padding: 1.1rem;
      }
+
+          .about-us-l-cont{
+  display: none;
+}
+
+.about-img img{
+  display: flex;
+  justify-content: center;
+  width: 50%;
+/*  display: none;*/
+}
 }
 
 @media only screen and (min-width: 690px) and (max-width: 992px){
