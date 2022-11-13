@@ -316,11 +316,119 @@
    }
    /*end notification section*/
 
+   
    /*about-us section*/
    .about-us{
-   	/*background-color: black;*/
+    position: relative;
+   width: 100%;
    }
+
+   .about-bot-head{
+    margin-top: 3.8rem;
+   }
+
+   .about-bot-head{
+    margin-top: 4rem;
+   }
+
+   .about-cont{
+    position: relative;
+    display: flex;
+    margin-top: 6rem;
+   }
+
+   .about-c{
+    width: 50%;
+    
+   }
+
+   .about-img{
+    display: none;
+   }
+
+
+   .about-us-left{
+    margin: 1rem;
+    height: 50rem;
+   }
+
+   .about-us-right p{
+   font-size: 1.55rem;
+   font-weight:600;
+   letter-spacing: 1.2px;
+   line-height: 2rem;
+   margin-top: 4rem;
+   }
+
+   .about-btn button{
+     padding: 1rem;
+       border-radius: 40px;
+       cursor: pointer;
+       margin-left: 2rem;
+      border-color:transparent;
+       font-weight: 400;
+       letter-spacing: 1px;
+       margin-top: 2rem;
+       transition: 0.2s ease;
+       box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 2px 2px rgba(0,0,0,0.23);
+       background-color: #14487C;
+       color: white;
+   }
+   
+
+/*about us left cont*/
+
+.about-us-1-cont{
+  position: relative;
+}
+   
+   .ab-1,.ab-2{
+    position: absolute;
+    width: 20rem;
+    height: 25rem;
+    background-size: 100% 100%;
+     border: 0px solid #d9d9d9;
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+   }
+
+   .ab-1{
+     background-image: url('images/about/ab2.jpg');
+   }
+
+   .ab-2{
+    top: 40%;
+    left: 20%;
+    background-image: url('images/about/ab1.jpg');
+   }
+
+   .ab-3,.ab-4{
+    position: absolute;
+    width: 5rem;
+    height: 10rem;
+    border: 10px solid#14487C;
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+   }
+
+   .ab-3{
+    top: 5%;
+    left: 30%;
+    border-radius: 10px;
+
+   }
+
+   .ab-4{
+    top: 55%;
+    left: 5%;
+    border-radius: 10px;
+    transform: rotate(90deg);
+   }
+
+  /*end about us left cont*/
+
+
    /*end about-us section*/
+
+/*...---------------------------------------------------...*/
 
    /*contact section*/
    .contact{
