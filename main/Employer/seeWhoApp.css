@@ -1,0 +1,357 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+
+html{
+	font-size: 10px;
+}
+
+
+body{
+	width: 100%;
+min-height: 80rem;
+/*	overflow: hidden;*/
+	/*background-color: #222;*/
+  background-color: white;
+	 font-family: 'Josefin Sans', sans-serif;
+}
+
+
+/*nav section*/
+#nav{
+	position: relative;
+   background-color: white;
+}
+.nav{
+	/*position: fixed;*/
+  padding: 1rem;
+  z-index: 100;
+  background-color: white;
+  z-index: 1000000;
+}
+
+.nav-head{
+    width: 100%;
+   	position: fixed;
+   	top: 0%;
+    left: 0%;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 500;
+      font-size: 2.2rem;
+    align-items: center;
+    background-color: white;
+    z-index: 100000;
+    padding: 2rem;
+   }
+
+
+    .nav-head  a{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      color: black;
+    }
+
+   .nav-head  span {
+    display:flex;
+  width: 2rem;
+  height: 4rem;
+  background-color:  #0047b3;
+  margin-right: 1rem;
+   }
+/*end nav section*/
+
+/*main section*/
+  .main{
+  	display: flex;
+  	margin-top: 6rem;
+  }
+/*end main section*/
+
+
+/*desc section*/
+	 .job{
+   	position: relative;
+   	min-width:22rem;
+   	max-width: 80rem;
+   	min-height: 34rem;
+   	/*border: 2px solid black;*/
+   	margin: 1rem;
+   	border-radius: 10px;
+   	padding: 2rem;
+  transition: 0.2s ease;
+  border: 2px solid transparent;
+  transition: 0.2s ease;
+   }
+
+   .job:before{
+   	content: ' ';
+   	width: 100%;
+   	height: 100%;
+   	position: absolute;
+   	top: 0;
+   	right: 0;
+   	bottom: 0;
+   	left: 0;
+    background-image: linear-gradient(#FBD72B , #F9484A);
+    z-index: -1;
+    opacity: 0.1;
+   }
+
+
+
+   .job-title{
+     font-size: 2rem;
+     margin-top: 2rem;
+   }
+
+   .job-company,.job-location{
+   	font-size: 1.6rem;
+   	color:  #1a1a1a;
+   	font-weight: 800;
+   	margin-top: 0.5rem;
+   }
+
+   .job-location{
+   	margin-top: 0.2rem;
+   }
+
+   .job-s{
+   	margin-top: 0.6rem;
+   	display: flex;
+   	align-items: center;
+   }
+
+       /*job money*/
+    .job-money-div,.job-type-div{
+       display: flex;
+       align-items: center;
+       color: #1a1a1a;
+       
+     }
+
+      .job-money-div p,.job-type-div p {
+           font-size: 1.5rem;
+           font-weight: 800;
+           margin-left: 0.5rem;
+      }
+
+     .job-money-div img{
+     	width: 20px;
+     }
+      /*end job money*/
+
+      /*job type*/
+      .job-type-div img{
+      	width: 19px;
+      	margin-left: 1rem;
+      }
+      /*end job type*/
+      
+     
+      /*job description*/
+      .desc{
+       margin: 1rem 0rem;
+       /*border: 2px solid black;*/
+       /*padding: 2.5rem;*/
+      }
+
+
+       .desc h2{
+       	font-size: 2.5rem;
+       	margin-top: 1rem;
+       	letter-spacing: 1px;
+       	border-bottom: 2px solid  #808080;
+       }
+
+      .job-description{
+      	/*color: #1a1a1a;*/
+      	font-weight: 800;
+        /*text-transform: capitalize;*/
+        font-size: 1.5rem;
+        line-height: 2rem;
+        letter-spacing: 0.5px;
+        margin-top: 1rem;
+       /* font-family: Georgia;*/
+      }
+
+      
+   
+
+      /*end job description*/
+      
+      /*job button*/
+      .job-button{
+      	display: flex;  
+      }
+
+
+      .job-button .descButton, .job-button .job-apply,.back button{
+       padding: 1rem;
+       border-radius: 40px;
+       cursor: pointer;
+       margin-left: 2rem;
+      border-color:transparent;
+       font-weight: 400;
+       letter-spacing: 1px;
+       margin-top: 1rem;
+       transition: 0.2s ease;
+       box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 2px 2px rgba(0,0,0,0.23);
+      }
+
+      .job-button .descButton{
+          background-color: orange;
+          z-index: 1000000;
+      }
+
+       .job-apply{
+      	background-color: #0059b3;
+      	 color: white;
+         z-index: 10000000;
+      }
+      
+      .job-button .descButton:hover,.job-button .job-apply:hover{
+      	transform: scale(1.2);
+      }
+
+      .job-apply-back{
+      background-color: #00cc7a;
+
+      }
+
+      /*end job button*/
+/*end desc section*/
+
+/*respond section*/
+.respond{
+	margin: 2rem;
+	margin-left: 8rem;
+}
+
+.res-head{
+	font-size: 1.5rem;
+}
+
+ .head{
+    display: flex;
+    align-items:center;
+   }
+
+   .head img{
+    width: 50px;
+    position: relative;
+   }
+
+   .head-img{
+    width: 60px;
+    height: 50px;
+    position: relative;
+   }
+
+
+  .head-img:before{
+    content: "";
+    width: 200%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color:orange;
+      border-radius: 20px;
+      transform: translateX(-6.7rem);
+      transition: 0.4s ease;
+   }
+
+
+   .head h1{
+  border-bottom: 2px solid #999999;
+  /*margin-left: 1.5rem;*/
+   }
+
+   /*notification section*/
+   .noti-list{
+    margin-top: 2rem;
+    justify-content: center;
+    height: 120%;
+   }
+ 
+ .noti{
+  width: 92%;
+  min-height: 5rem;
+  max-height: 10rem;
+  padding: 2rem;
+   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 -6px 6px rgba(0,0,0,0.23);
+   border-radius: 20px;
+   margin-top: 2rem;
+   display: flex;
+   justify-content: space-between;
+/*   align-items: center;*/
+ }
+   .n-head h1{
+   font-size: 2rem;
+   }
+
+   
+   .noti .n-head-lead{
+    display: flex;
+    align-items: center;
+   }
+
+   .noti .n-profile{
+    display: flex;
+    align-items: center;
+    margin-right: 2.5rem;
+   }
+
+   .noti .n-profile .pn{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+   }
+
+   .noti .n-profile .pn img{
+    width: 100%;
+   }
+
+   .noti .n-head-lead button{
+     padding: 1rem;
+       border-radius: 40px;
+       cursor: pointer;
+       border-color:transparent;
+       font-weight: 400;
+       letter-spacing: 1px;
+       transition: 0.2s ease;
+       background-color:#14487C;
+       z-index: 1000000;
+       width: 100%;
+       color: white;
+       box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 2px 2px rgba(0,0,0,0.23);
+   } 
+   
+
+
+   /*end notification section*/
+
+   @media only screen and (max-width: 992px){
+     .main{
+     	flex-direction: column;
+     	margin-top: 4rem;
+     }
+
+     .respond{
+     	margin-left: 2.5rem;
+     }
+
+     .noti{
+     	width: 100%;
+     }
+
+   }

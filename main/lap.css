@@ -70,6 +70,10 @@
      	padding: 1.1rem;
      }
 
+     .inputcap{
+      min-width: 60%;
+     }
+
    
 }
 
@@ -81,6 +85,7 @@
   
   #nav{
   	width: 20%;
+    background-color: white;
   }
 
   #feed{
@@ -91,6 +96,12 @@
  
   }
 
+  body{
+    background-color: white;
+  }
+
+
+
  
 
 	.job{
@@ -100,13 +111,14 @@
 	}
 
 	 .growth-main{
-     	height: 80rem;
+/*     	height: 90rem;*/
      }
 
 	 .feed{
-     	height: 72rem;
+     	height: 62rem;
      	padding-bottom: 10rem;
      	overflow-x: hidden;
+/*      display: none;*/
      }
 
      .job:hover{
@@ -121,18 +133,6 @@
      	font-size: 1.1rem; 
      	padding: 1.1rem;
      }
-
-     
-        .about-us-l-cont{
-  display: none;
-}
-
-.about-img img{
-  display: flex;
-  justify-content: center;
-  width: 50%;
-/*  display: none;*/
-}
 }
 
 @media only screen and (min-width: 690px) and (max-width: 992px){

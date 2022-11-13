@@ -1,0 +1,193 @@
+/*profile section*/
+/*common*/
+
+.profile{
+ padding: 5rem 2rem 0.5rem;
+}
+
+/*end common*/
+
+/*profile top*/
+.profile-top{
+	width: 100%;
+	padding: 1rem;
+	border-left: 2px solid  #ff9933;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.sign-out  button{
+  padding: 1rem;
+  border: none;
+  margin-left: 2rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.profile-growth-div{
+ font-size: 1.4rem;
+}
+
+.profile-growth-div h2:nth-child(2){
+  margin-left: 1rem;
+  margin-right: 0.3rem;
+}
+
+/*login sign up*/
+.login-signup{
+	width: 100%;
+}
+
+.login-signup a{
+	max-width: 100%;
+	padding: 1.2rem;
+	border: 1px solid  #0059b3;
+	letter-spacing: 0.5px;
+	transition: 0.2s ease;
+    font-size: 1.5rem;
+     font-weight: 600;
+     border-radius: 20px;
+     background-color:  #0059b3;
+
+}
+
+.login-signup a{
+	color:  white;
+	
+}
+
+.login-signup a:hover {
+	transform: scale(1.2);
+	background-color: #0047b3;
+	border: none;
+	color: white;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+
+/*end .login sign up*/
+
+ /*your profile*/
+ .profile-top .account{
+ 	width: 60%;
+ 	display: flex;
+ 	align-items: center;
+ }
+
+ .profile-top .account img{
+ 	 transition: 0.4s ease;
+ 	 width: 55px;
+ }
+
+ .profile-top .account img:hover {
+ 		box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+ 		border-radius: 50%;
+ 		transform: scale(1.2);
+ 		cursor: pointer;
+ }
+ /*end your profile*/
+
+
+
+
+
+/*end profile top*/
+
+/*profile mid*/
+.profile-mid{
+	width: 100%;
+	height: 100%;
+	margin-top: 5rem;
+
+}
+
+
+  /*profile card*/
+  .profile-card{
+    position: relative;
+  	width: 100%;
+	height: 25rem;
+	border: 2px solid orange;
+	 border-radius: 20px;
+/* Created with https://www.css-gradient.com */
+background: conic-gradient(from 225deg, #14487C, #161086);
+    transition: 0.2s ease;
+     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    display: flex;
+    padding: 2rem;
+    justify-content: space-around;
+    color: white;
+  }
+
+  .profile-card:hover{
+   cursor: pointer;
+   transform: scale(1.05);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 4px 10px rgba(0,0,0,0.22);
+  }
+
+  .profile-card .left-card{
+  	font-size:1.4rem;
+  	/*color: ;*/
+    height: 100%;
+  }
+
+  .profile-card .curr-loc{
+    margin-top: 2.5rem;
+  }
+
+  .profile-card .curr-loc,.profile-card .profile-rec-edu{
+    display: flex;
+    align-items: center;
+  }
+
+  .profile-card .left-card img{
+    margin-right: 1rem; 
+    width: 20px;
+  }
+
+   .profile-card .profile-rec-edu{
+      margin-top: 1.3rem;
+     }
+
+        .profile-card .profile-rec-edu{
+          
+        }
+
+
+      .profile-edu-bot{
+        position: absolute;
+        bottom: 5%;
+        font-size: 1rem;
+      }
+  
+  
+  #name{
+    font-size: 2.5rem;
+    margin-top: 2rem;
+  }
+  
+
+  #qualification{
+      font-weight: 600;
+     margin-top: 3rem;
+     font-size: 1.5rem;
+  }
+
+  #college{
+  	margin-top: 0.5rem;
+    font-size: 2rem;
+  }
+
+
+  .profile-card .right-card img{
+  	width: 100px;
+  }
+  
+
+  /*end profile card*/
+
+
+/*end profile min*/
+
+/*end profile section*/
