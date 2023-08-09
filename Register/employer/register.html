@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Register</title>
+	<link rel="stylesheet" href="register.css">
+	<style>
+		 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
+	</style>
+  <script type="text/javascript">
+  
+  alert("You Have Visited at Employers Register!!!!");
+
+</script>
+</head>
+<body>
+
+	<!-- registration section -->
+
+	<section id="reg-log">
+		<div class="reg-log">
+
+			<div class="reg-log-buttons">
+				<ul class="regi-but ">
+					<li class="regs but active">
+						<a class="">Register</a>
+					</li>
+					<li class="logs but">
+						<a  class="">Login</a>
+					</li>
+				</ul>
+			</div>
+		<div class="logregdiv">
+		<!-- registration section -->
+		<div class="reg com">
+		<div class="reg-info">
+		<form action="" method="post" class="reg-info-form">
+     <h2>Enter Below Details:-</h2>
+	  <fieldset>
+     <input placeholder="Employers name..." name="ename" type="text" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Employers Email Address" name="email" type="email" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Employers Phone Number" name="phone" type="tel" tabindex="3" maxlength="10" required>
+    </fieldset>
+    <fieldset>
+    	 <input placeholder="Enter Password" name="password" type="password" tabindex="4" required>
+    </fieldset>
+     <fieldset>
+    	 <input placeholder="Confirm Password" name="cpassword" type="password" tabindex="5" required>
+    </fieldset>
+     <h2 class="qual">Enter Company details:-</h2>
+     <fieldset>
+    <input placeholder="Enter Company Name.." name="company" type="text" tabindex="6" required>
+    </fieldset>
+     <fieldset>
+    	<input placeholder="Work Area ( Hardware , Software )" name="workarea" type="text" tabindex="7" required>
+    </fieldset>
+    <fieldset>
+    	<input placeholder="Company or Employer Address.." name="address" type="text" tabindex="8" required>
+    </fieldset>
+    <fieldset>
+      <button name="eregister" type="submit" id="Register" value="register" data-submit="...Sending"  onclick="window.open('../../main/employer/index.html')">Register</button>
+    </fieldset>
+</form>
+</div>
+					<div class="reg-pr">
+						
+					</div>
+				</div>
+			
+			<!-- end registration section -->
+			<!-- login section -->
+			<div class="log com">
+				<form action="" method="post" class="log-info-form">
+
+					<h2>Enter Login Details:-</h2>
+			<fieldset>
+    <fieldset>
+      <input placeholder="Employer  Email Address" name="email" type="email" tabindex="2" required>
+    </fieldset>
+
+      <fieldset>
+      <input placeholder="Employer Phone Number" name="phone" type="tel" tabindex="3">
+    </fieldset>
+    <fieldset>
+    	 <input placeholder="Enter Password" name="password" type="password" tabindex="4" required>
+    </fieldset>
+
+    <fieldset>
+      <button name="elogin" type="submit" value="login" id="Login" data-submit="...Sending" onclick="window.open('../../main/employer/index.html')">Login</button>
+    </fieldset>
+					</form>
+				</div>
+			
+			<!-- end login section -->
+		</div>
+
+		</div>
+	</section>
+
+  <script src="script.js"></script>
+
+  <!-- login swipe script -->
+  <script>
+  	const logSwipe = () =>{
+  		const logBut = document.querySelector('.logs');
+  		const regBut = document.querySelector('.regs');
+  		const logDiv = document.querySelector('.log');
+  		const regDiv = document.querySelector('.reg');
+
+  		logBut.addEventListener('click',()=>{
+           logDiv.classList.add('logshow');
+           regDiv.classList.add('regHide');
+  		});
+
+  		regBut.addEventListener('click',()=>{
+           logDiv.classList.remove('logshow');
+           regDiv.classList.remove('regHide');
+  		});
+  	}
+
+  	logSwipe();
+  </script>
+  <!-- end login swipe script -->
+
+
+</body>
+</html>

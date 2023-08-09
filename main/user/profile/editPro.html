@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>EDIT Profile</title>
+	<link rel="stylesheet" href="editPro.css">
+	<link rel="stylesheet" href="profileMobile.css">
+	<link rel="stylesheet" href="editpromob.css">
+	<style>
+		 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
+		 /*back button*/
+		 .back{
+         /* position: fixed;
+          left: 1rem;
+          top: 1rem;*/
+		 }
+
+      .btn button {
+      	background-color: #0059b3;
+      	 color: white;
+         z-index: 10000000;
+         border-radius: 10px;
+         padding: 1rem;
+         border-color: transparent;
+         cursor: pointer;
+         margin: 1rem;
+         transition: 0.2s ease;
+      }
+
+      .btn button:hover{
+      	transform: scale(1.1);
+      }
+      /*end back button*/
+	</style>
+</head>
+<body>
+
+	<section id="nav">
+		<div class="nav">
+			 <div class="back btn">
+		     <a href="profile.html"><button>Cancel</button></a>
+	       </div>
+	       <div class="nav-head">
+	       	<h1><a href=""><span> </span>Growth Life</a></h1>
+	       </div>
+		</div>
+	</section>
+
+	<!-- <h1> This file is under construction</h1> -->
+<section id="profile-main">
+	<div class="profile-main">
+
+           
+		<div class="profile-left prof">
+				 <h2 class="pleft-head">Edit Your Profile</h2>
+				<!-- profile left top division -->
+				 <form action="/action_page.php">
+			<div class="profile-left-top ptb">
+
+              <div class="profile-pic">
+              	<div class="profile-img">
+             	 <img src="icon/profile.png" alt="">
+             	 </div>
+             	    <div class="props-up up-photo">
+                  <input type="file" id="myPhoto" name="filename" accept="image/png, image/gif, image/jpeg" placeholder="Upload Your Photo">
+                   </div>
+               </div>
+
+                 <div class="profile-u-info">
+             	<div class="profile-name">
+                   <label for="name">Name:</label>
+             		 <input type="text" id="myName" name="Name" placeholder="Enter Your Name">
+             	</div>
+             	<div class="curr-loc">
+                   <label for="Loc">Location:</label>
+             		 <input type="text" id="myLoc" name="Loc" placeholder="Enter Your Location">
+               	</div>
+
+                <div class="profile-rec-edu">
+             		<div class="pro rec-edu-info">
+
+             	  <label for="qualification">Qualification:</label>
+             		 <input type="text" id="qualification" name="qualification" placeholder="Enter Your Qualification"><br><br>
+
+             	  <label for="CollegeName">College Name:</label>
+             		 <input type="text" id="college" name="CollegeName" placeholder="Enter Your College Name">
+             		
+             		</div>
+             	 </div>
+               </div>
+                
+             </div>
+             <div class="btn">
+             <button>Submit</button>
+              </div>
+           </form>
+              <!-- end profile left top division -->
+			</div>
+
+			<div class="profile-right prof">
+				<div class="inforight">
+          <form action="">
+				<div class="intro props">
+					<div class="info-head">
+						<img src="icon/desc.png" >
+						<h2>About</h2>
+					</div>
+					 <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+				   </div>
+
+				      <div class="pinfo props">
+				   	 <div class="info-head">
+						  <img src="icon/pinfo.png">
+						  <h2>Personal Info</h2>
+					</div>
+					<div class="p-list props-cont">
+						<div class="pinfo-item">
+							<div class="pinfo-head">
+								<h1 >Phone</h1>
+							</div>
+							<div class="pinfo-cont">
+								<input type="Number" placeholder="Enter Your Phone Number">
+							</div>
+						</div>
+						<div class="pinfo-item ">
+								<div class="pinfo-head">
+								<h1>Email</h1>
+							</div>
+							<div class="pinfo-cont">
+							<input type="text" placeholder="Enter Your Email Id">
+							</div>
+						</div>
+						<div class="pinfo-item ">
+							<div class="pinfo-head">
+								<h1>Address</h1>
+							</div>
+							<div class="pinfo-cont">
+								 <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+							</div>
+						</div>
+					</div>
+				   </div>
+
+				   <div class="education props">
+				   	 <div class="info-head">
+						  <img src="icon/clg.png">
+						  <h2>Education</h2>
+					    </div>
+					    <div class="ed-list props-cont">
+
+					    <div class="ed-item ed-top">
+					    	<div class="ed-item-head">
+                         		<h1 id="edu-type">Education Type</h1>
+                         	</div>
+                         	<div class="ed-item-cont">
+                         		<h1 id="edu-course">Course & School/College/University</h1>
+                         	</div>
+                         	<div class="ed-item-score">
+                         		<h3 id="edu-score">Score(in %)</h3>
+                         	</div>
+					    </div>
+
+                         <div class="ed-item ed-pg">
+                         	<div class="ed-item-head">
+                         		<h1 id="edu-type">Post Graduation</h1>
+                         	</div>
+                         	<div class="ed-item-cont">
+                         		<input type="text" placeholder="Post Graduation(if Applicable)">
+                         		<input type="text" placeholder="Enter College/University Name">
+                         	</div>
+                         	<div class="ed-item-score">
+                         		<input type="number" placeholder="Enter  Marks(in %)">
+                         	</div>
+                         </div>
+
+                         <div class="ed-item ed-g">
+                         	<div class="ed-item-head">
+                         		<h1 id="edu-type">Graduation</h1>
+                         	</div>
+                         	<div class="ed-item-cont">
+                         	<input type="text" placeholder="Graduation(if Applicable)">
+                         		<input type="text" placeholder="Enter College/University Name">
+                         	</div>
+                         	<div class="ed-item-score">
+                         		<input type="number" placeholder="Enter  Marks(in %)">
+                         	</div>
+                         </div>
+
+                          <div class="ed-item ed-inter">
+                         	<div class="ed-item-head">
+                         		<h1 id="edu-type">Intermediate</h1>
+                         	</div>
+                         	<div class="ed-item-cont">
+                         		<input type="text" placeholder="Enter Stream(Science/Commerce/Arts)">
+                         		<input type="text" placeholder="Enter College/University Name">
+                         	</div>
+                         	<div class="ed-item-score">
+                         		<input type="number" placeholder="Enter Marks(in %)">
+                         	</div>
+                         </div>
+
+                          <div class="ed-item ed-matric">
+                         	<div class="ed-item-head">
+                         		<h1 id="edu-type">Matriculation</h1>
+                         	</div>
+                         	<div class="ed-item-cont">
+                         		<input type="text" placeholder="Enter School Name">
+                         	</div>
+                         	<div class="ed-item-score">
+                         		<input type="number" placeholder="Enter  Marks(in %)">
+                         	</div>
+                         </div>
+
+					    </div>
+				   </div>
+
+				    <div class="Experience props">
+				   	   <div class="info-head">
+						  <img src="icon/edu.png">
+						  <h2>Experience</h2>
+					   </div>
+					   <div class="ex-list props-cont">
+
+					   	 <div class="ex-item ex-top">
+					    	        <div class="ex-item-head">
+                         		<h1 id="exp-comp">Company</h1>
+                         	</div>
+                         	<div class="ex-item-cont">
+                         		<h1 id="exp-role">Role</h1>
+                         	</div>
+                         	<div class="ex-item-year">
+                         		<h3 id="exp-year">Experience(in Months)</h3>
+                         	</div>
+					       </div>
+
+					   	   <div class="ex-item ex-item1 ">
+                         	<div class="ex-item-head">
+                         	<input type="text" placeholder="Enter Companies Name">
+                         	</div>
+                         	<div class="ex-item-cont">
+                         		<input type="text" placeholder="Enter Your Role">
+                         	</div>
+                         	<div class="ex-item-year">
+                         	<input type="number" placeholder="Enter Experience in Month">
+                         	</div>
+                         </div>
+					   </div>
+
+					   <div class="addmoreex">
+					   	<h1>+Add More</h1>
+					   </div>
+				   </div>
+
+				    <div class="Skills props">
+					    <div class="info-head">
+						  <img src="icon/skil.png">
+						  <h2>Skills and Hobbies</h2>
+					    </div>
+					    <div class="sh-list props-cont">
+					    	<label for="skills">Enter Your Skills</label><br>
+					       <input type="text" id="skills" name="skill" placeholder="Enter First Skill">
+					        <input type="text" id="skills" name="skill" placeholder="Enter Second Skill">
+					         <input type="text" id="skills" name="skill" placeholder="Enter Third Skill">
+					          <input type="text" id="skills" name="skill" placeholder="Enter Fourth Skill">
+					   </div>
+				    </div>
+				      <div class="btn">
+             <button>Submit</button>
+              </div>
+             </form>
+ 
+				</div>
+			</div>
+			
+		</div>
+	</section>
+
+
+</body>
+</html>

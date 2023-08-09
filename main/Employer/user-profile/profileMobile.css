@@ -1,0 +1,87 @@
+@media  only screen and (max-width: 992px){
+
+   
+  
+
+/*profile left section*/
+.pleft-head{
+  top:4%;
+  }
+	.profile-left{
+		width: 100%;
+     padding: 2rem;
+     margin: 0 0;
+	}
+
+	.profile-left-bot{
+		margin-top: 0;
+	}
+	/*end profile left section*/
+
+   /*profile right section*/
+   .profile-right{
+   	width: 100%;
+   	height: 100%;
+   	padding: 2rem;
+   	margin: 0;
+   }
+
+    .profile-right .inforight{
+    	width: 100%;
+    	height: 100%;
+    }
+
+
+/*    personal section*/
+ .pinfo-item{
+   width: 100%;
+ }
+
+ .pinfo-head h1{
+   font-size: 1.8rem;
+ }
+/*end personal section*/
+
+/*education section*/
+
+
+  .ed-top  .ed-item-head{
+      width: 8rem;
+     }
+
+
+ .ed-item-head{
+   width: 12rem;
+ }
+
+  .ed-item-head h1,.ex-item-head h1{
+    font-size: 1.4rem;
+  }
+
+  .ed-item-cont{
+   width: 20rem;
+  }
+
+   .ed-top .ed-item-cont{
+      width: 16rem;
+      font-size: 1.3rem;
+      margin-left: 0.2rem;
+   }
+
+    #edu-course{
+      font-size: 1.3rem;
+    }
+
+     #edu-clg{
+      font-size: 1.4rem;
+}
+
+/*end education section*/
+
+/*experience section*/
+.Experience{
+   width: 100%;
+}
+/*end experience section*/
+   /*end profile right section*/
+}

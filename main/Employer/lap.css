@@ -1,0 +1,211 @@
+/*for medium laptop*/
+
+@media only screen and (min-width: 1228px) and (max-width: 1510px){
+	
+     body{
+     	height: 100%;
+     }
+
+     .growth-main{
+     	height: 100rem;
+     }
+
+     .feed{
+     	min-height: 100rem;
+     }
+
+
+	.job-list{
+		justify-content: center;
+	}
+
+	.job{
+		min-width: 25rem;
+		max-width: none;
+		min-height: 32rem;
+		/*display: none;*/
+	}
+
+	.job:hover{
+     	transform: scale(1.02);
+     }
+
+	.feed-growth{
+		min-height: 100%;
+	}
+
+ /* .about-us-l-cont{
+  display: none;
+}
+
+.about-img img{
+  width: 60px;
+}*/
+}
+
+/*for mini laptop*/
+
+@media only screen and (min-width: 992px) and (max-width: 1228px){
+  
+  #nav{
+  	width: 25%;
+  }
+
+  #feed{
+  	width: 50%;
+  }
+
+  .feed{
+  	overflow-x: hidden;
+  }
+
+   .growth-main{
+     	height: 100rem;
+     }
+
+	 .feed{
+     	height: 95rem;
+     	padding-bottom: 10rem;
+     	overflow-x: hidden;
+     }
+
+     .login-signup{
+     	/*width: 25rem;*/
+     }
+
+     .login-signup a{
+     	font-size: 1.1rem; 
+     	padding: 1.1rem;
+     }
+
+     .inputcap{
+      min-width: 60%;
+     }
+
+
+
+   
+}
+
+
+
+/*for  and tablet*/
+
+@media only screen and (min-width: 500px) and (max-width: 992px){
+  
+  #nav{
+  	width: 20%;
+    background-color: white;
+  }
+
+  #feed{
+  	width: 100%;
+  }
+
+  #profile{
+ 
+  }
+
+  body{
+    background-color: white;
+  }
+
+
+
+ 
+
+	.job{
+		min-width: 25rem;
+		max-width: none;
+		min-height: 32rem;
+	}
+
+	 .growth-main{
+/*     	height: 90rem;*/
+     }
+
+	 .feed{
+     	height: 62rem;
+     	padding-bottom: 10rem;
+     	overflow-x: hidden;
+/*      display: none;*/
+     }
+
+     .job:hover{
+     	transform: scale(1.02);
+     }
+
+       .login-signup{
+     
+     }
+
+     .login-signup a{
+     	font-size: 1.1rem; 
+     	padding: 1.1rem;
+     }
+
+        .about-us-l-cont{
+  display: none;
+}
+
+.about-img img{
+  display: flex;
+  justify-content: center;
+  width: 50%;
+/*  display: none;*/
+}
+}
+
+@media only screen and (min-width: 690px) and (max-width: 992px){
+	.nav-head .head{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+    font-size: 2.2rem;
+   }
+
+   .login-head-nav{
+   	position: fixed;
+   	left: 55rem;
+   }
+
+    .login-head-nav a{
+    	transform: scale(1.2);
+    }
+
+     .nav-head{
+   justify-content: center;
+   left: 0;
+  }
+}
+
+
+/*mobile section*/
+
+@media only screen and (max-width: 992px){
+	/*profile section*/
+	#profile{
+   	display: none;
+   	width: 100%;
+   width: 100%;
+     position: fixed;
+      left: 0;
+      padding-top: 0;
+   }
+
+  /* .profile-i{
+        transform: translateX(100rem);
+         z-index: 1000;
+       transition: 0.5s ease;
+   }
+
+  .profileshow{
+   transform: translateX(0);
+  }*/
+	/*end profile section*/
+}
+
+
+/*@media only screen and (max-width: 768px)*/
+
+

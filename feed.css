@@ -1,0 +1,709 @@
+/*feed section*/
+/*feed common section*/
+.feed{
+ position: relative;
+ padding: 1rem 0 0 0 ;
+ overflow: hidden;
+}
+
+.feed-growth{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transform: translateY(80rem);
+	opacity: 0;
+	transition: 0.4s ease;
+}
+
+.feed-growth-show{
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.feed-growth .noty{
+  font-size: 1.5rem;
+  transform: translateY(5rem);
+  background-color: #737373;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.feed-growth .login-signup{
+  transform: translateY(7rem);
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+/* Scrollbar Styling */
+.j-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.j-list::-webkit-scrollbar-track {
+    background-color: #ebebeb;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+
+}
+
+.j-list::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 20px;
+    border-radius: 10px;
+  }
+
+.j-list:hover::-webkit-scrollbar-thumb { background: #0059b3;}
+.j-list::-webkit-scrollbar-thumb:horizontal:hover,
+.j-list::-webkit-scrollbar-thumb:vertical:hover { background:  #0059b3; }
+/*end feed common section*/
+
+  /*Dashboard Section*/
+ /* .dashboard-growth-show{
+  opacity: 1;
+  }
+*/
+  .dashboard{
+  	padding: 1rem;
+    transform: translateY(0);
+  }
+
+  .dash-bot-head{
+  	font-size: 2.5rem;
+  	letter-spacing: 0.5px;
+  }
+
+  .dash-top{
+  	width: 100%;
+  	height: 15%;
+  	/*border: 2px solid black;*/
+    font-size: 3rem;
+    display: flex;
+   align-items: center;
+  }
+
+  .dash-top span{
+  	color: #e67300;
+  }
+
+
+
+  /*job section*/
+   .dash-bot{
+   	width: 100%;
+   	height: 80%;
+    padding: 2rem;
+    padding-top: 3.1rem;
+/*    overflow-y: scroll;*/
+   }
+
+
+   .dash-bot-head{
+   	display: flex;
+   	align-items:center;
+   	/*border-bottom: 2px solid #999999;*/
+   }
+
+   .dash-bot-head img{
+   	width: 50px;
+   	position: relative;
+   }
+
+   .head-img{
+   	width: 60px;
+   	height: 50px;
+   	position: relative;
+   }
+
+
+  .head-img:before{
+   	content: "";
+   	width: 200%;
+   	height: 100%;
+   	position: absolute;
+   	top: 0;
+   	right: 0;
+   	bottom: 0;
+   	left: 0;
+    background-color: orange;
+    	border-radius: 20px;
+    	transform: translateX(-6.7rem);
+    	transition: 0.4s ease;
+   }
+
+  
+
+
+   .dash-bot-head h1{
+	border-bottom: 2px solid #999999;
+	/*margin-left: 1.5rem;*/
+   }
+
+
+   .j-list{
+    width: 100%;
+    height: 100%;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    /*border: 2px solid black;*/
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 4rem;
+    overflow-y: scroll;
+   }
+
+
+
+   .job{
+   	position: relative;
+   	min-width:22rem;
+   	max-width: 34rem;
+   	min-height: 34rem;
+   	/*border: 2px solid black;*/
+   	margin: 1rem;
+   	border-radius: 10px;
+   	padding: 2rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 -2px 6px rgba(0,0,0,0.23);
+  transition: 0.2s ease;
+  border: 2px solid transparent;
+  transition: 0.2s ease;
+   }
+
+
+   .job:before{
+   	content: ' ';
+   	width: 100%;
+   	height: 100%;
+   	position: absolute;
+   	top: 0;
+   	right: 0;
+   	bottom: 0;
+   	left: 0;
+    background-image: linear-gradient(#FBD72B , #F9484A);
+    z-index: -1;
+    opacity: 0.1;
+   }
+
+
+
+   .job:hover{
+   	  border-color: orange;
+   	  transform: scale(1.05);
+   }
+
+/*   job blur*/
+.jobblur{
+ position: relative;
+ color: transparent;
+text-shadow: 0 0 6.2px #000;
+}
+ 
+ 
+
+/*end job blur*/
+
+
+   .job-title{
+     font-size: 4rem;
+     margin-top: 2rem;
+   }
+
+   .job-company,.job-location{
+   	font-size: 1.6rem;
+/*   	color:  #1a1a1a;*/
+   	font-weight: 800;
+   	margin-top: 0.5rem;
+   }
+
+   .job-location{
+   	margin-top: 0.2rem;
+   }
+
+   .job-s{
+   	margin-top: 0.6rem;
+   	display: flex;
+   	align-items: center;
+   }
+
+       /*job money*/
+    .job-money-div,.job-type-div{
+       display: flex;
+       align-items: center;
+       color: #1a1a1a;
+       
+     }
+
+      .job-money-div p,.job-type-div p {
+           font-size: 1.5rem;
+           font-weight: 800;
+           margin-left: 0.5rem;
+      }
+
+     .job-money-div img{
+     	width: 20px;
+     }
+      /*end job money*/
+
+      /*job type*/
+      .job-type-div img{
+      	width: 19px;
+      	margin-left: 1rem;
+      }
+      /*end job type*/
+      
+     
+      /*job description*/
+      .desc{
+       margin: 1rem 0rem;
+       /*border: 2px solid black;*/
+       padding: 2.5rem;
+       box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 -2px 6px rgba(0,0,0,0.23);
+      }
+
+
+       .desc h2{
+       	font-size: 2.5rem;
+       	margin-top: 1rem;
+       	letter-spacing: 1px;
+       	border-bottom: 2px solid  #808080;
+       }
+
+      .job-description{
+      	/*color: #1a1a1a;*/
+      	font-weight: 800;
+        /*text-transform: capitalize;*/
+        font-size: 1.5rem;
+        line-height: 2rem;
+        letter-spacing: 0.5px;
+        margin-top: 1rem;
+       /* font-family: Georgia;*/
+      }
+      /*end job description*/
+      
+      /*job button*/
+      .job-button{
+      	display: flex;  
+      }
+
+
+      .job-button .descButton, .job-button .job-apply{
+       padding: 1rem;
+       border-radius: 40px;
+       cursor: pointer;
+       margin-left: 2rem;
+      border-color:transparent;
+       font-weight: 400;
+       letter-spacing: 1px;
+       margin-top: 1rem;
+       transition: 0.2s ease;
+       box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 2px 2px rgba(0,0,0,0.23);
+      }
+
+      .job-button .descButton{
+          background-color: orange;
+          z-index: 1000000;
+      }
+
+      .job-button .job-apply{
+      	background-color: #0059b3;
+      	 color: white;
+         z-index: 10000000;
+      }
+      
+      .job-button .descButton:hover,.job-button .job-apply:hover{
+      	transform: scale(1.2);
+      }
+
+      /*end job button*/
+
+
+  /*end job section*/
+
+  /*end Dashboard Section*/
+  
+  /*applied section*/
+  .applied{
+   /*background-color: green;*/
+/*   display: none;*/
+  }
+  /*end applied section*/
+   
+   /*notification section*/
+   .notification{
+    /*background-color: blue;*/
+   }
+   /*end notification section*/
+
+   
+   /*about-us section*/
+   .about-us{
+/*    position: relative;*/
+   width: 100%;
+/*   display: none;*/
+   }
+
+   .about-bot-head{
+    margin-top: 3.8rem;
+   }
+
+   .about-bot-head{
+    margin-top: 4rem;
+   }
+
+   .about-cont{
+    position: relative;
+    display: flex;
+    margin-top: 6rem;
+   }
+
+   .about-c{
+    width: 50%;
+    
+   }
+
+   .about-img{
+    display: none;
+   }
+
+
+   .about-us-left{
+    margin: 1rem;
+    height: 50rem;
+   }
+
+   .about-us-right ul{
+    list-style: none;
+    margin-top: 1rem;
+   }
+
+   .about-us-right li{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #14487C ;
+    margin-top: 0.5rem;
+   }
+
+
+
+   .about-us-right p{
+   font-size: 1.55rem;
+   font-weight:600;
+   letter-spacing: 1.2px;
+   line-height: 2rem;
+   margin-top: 4rem;
+   }
+
+
+   .about-btn button{
+     padding: 1rem;
+       border-radius: 40px;
+       cursor: pointer;
+       margin-left: 2rem;
+      border-color:transparent;
+       font-weight: 400;
+       letter-spacing: 1px;
+       margin-top: 2rem;
+       transition: 0.2s ease;
+       box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 2px 2px rgba(0,0,0,0.23);
+       background-color: #14487C;
+       color: white;
+   }
+
+   .about-us-right .vision,.about-us-right .capable{
+    margin-top: 2rem;
+   }
+
+   .about-us-right .vision span{
+/*    font-weight: 800;*/
+font-size: 2.2rem;
+text-decoration: underline;
+   }
+   
+
+/*about us left cont*/
+
+.about-us-1-cont{
+  position: relative;
+}
+   
+   .ab-1,.ab-2{
+    position: absolute;
+    width: 20rem;
+    height: 25rem;
+    background-size: 100% 100%;
+     border: 0px solid #d9d9d9;
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+   }
+
+   .ab-1{
+     background-image: url('images/about/ab2.jpg');
+   }
+
+   .ab-2{
+    top: 40%;
+    left: 20%;
+    background-image: url('images/about/ab1.jpg');
+   }
+
+   .ab-3,.ab-4{
+    position: absolute;
+    width: 5rem;
+    height: 10rem;
+    border: 10px solid #14487C;
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+   }
+
+   .ab-3{
+    top: 5%;
+    left: 30%;
+    border-radius: 10px;
+
+   }
+
+   .ab-4{
+    top: 55%;
+    left: 5%;
+    border-radius: 10px;
+    transform: rotate(90deg);
+   }
+
+  /*end about us left cont*/
+
+
+   /*end about-us section*/
+
+/*...---------------------------------------------------...*/
+
+   /*contact section*/
+   .contact{
+    padding: 2rem;
+   }
+
+   .contact .contactform{
+    display: none;
+   }
+
+   .contact-bot-head{
+    margin-top: 2rem;
+   }
+
+   .contactcont{
+    display: flex;
+    justify-content: center;
+   }
+
+   .contactleft{
+  width: 80%;
+  height: 65rem;
+  margin-top: 8rem;
+  /*border: 2px solid orange;*/
+ }
+
+ .contactleft{
+  
+ }
+
+ .contactleft .contactitem{
+  display: flex;
+  align-items: center;
+  margin-top: 4rem;
+  /*border: 2px solid #595959;*/
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 -2px 10px rgba(0,0,0,0.22);
+  padding: 2rem;
+  border-radius: 20px;
+ }
+
+ .contactitem .contactinfo{
+  margin-left: 1.5rem;
+ }
+
+ .contactitem .contactpic img{
+  width: 40px;
+  margin-top: 0.5rem;
+ }
+
+ .contactitem .contactinfo p{
+  font-size: 1.2rem;
+  color: #595959;
+  font-family: 'Nanum Gothic', sans-serif;
+ }
+
+ .contactitem .contactinfo img{
+  width: 25px;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  border-radius: 10px;
+   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+ }
+
+ .contactitem .contactinfo h2{
+  color: #1a1a1a;
+  letter-spacing: 1px;
+  margin-top: 0.5rem;
+  font-family: 'Nanum Gothic', sans-serif;
+ }
+   /*end contact section*/
+
+     /*needhelp section*/
+   .need-help{
+        height: 100%;
+        opacity: 1;
+/*        transform: translateY(-80rem);*/
+   }
+
+   .needcont{
+   display: flex;
+   justify-content: center;
+   }
+
+   .need-bot-head{
+    margin-top: 4rem;
+   }
+
+.contactform{
+  width: 100%;
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+}
+
+
+
+  #contactf input[type="text"],
+#contactf input[type="email"],
+#contactf input[type="tel"],
+#contactf input[type="url"],
+#contactf textarea,
+#contactf button[type="submit"] {
+  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#contactf {
+  background: #F9F9F9;
+  padding: 25px;
+  margin: 0rem 0;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 -2px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#contactf h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+#contactf h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.contactf{
+  width: 75%;
+  /*display: none;
+  opacity: 0;*/
+  position: absolute;
+  transition: 1s ease;
+}
+
+.contactfshow{
+  display: block;
+  opacity: 1;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contactf input[type="text"],
+#contactf input[type="email"],
+#contactf input[type="tel"],
+#contactf input[type="url"],
+#contactf textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contactf input[type="text"]:hover,
+#contactf input[type="email"]:hover,
+#contactf input[type="tel"]:hover,
+#contactf input[type="url"]:hover,
+#contactf textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+#contactf textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contactf button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #4CAF50;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#contactf button[type="submit"]:hover {
+  background: #43A047;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contactf button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.copyright {
+  text-align: center;
+}
+
+#contactf input:focus,
+#contactf textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: #888;
+}
+  /*end contact form*/
+
+
+   /*end needhelp section*/
+
+/*end feed section*/

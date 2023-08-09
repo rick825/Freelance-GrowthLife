@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Description</title>
+		<style>
+		 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
+		 html{
+		 	font-size: 10px;
+		 }
+
+		 body{
+            font-family: 'Josefin Sans', sans-serif;
+		 }
+
+		 .job{
+   	position: relative;
+   	min-width:22rem;
+   	max-width: 80rem;
+   	min-height: 34rem;
+   	/*border: 2px solid black;*/
+   	margin: 1rem;
+   	border-radius: 10px;
+   	padding: 2rem;
+  transition: 0.2s ease;
+  border: 2px solid transparent;
+  transition: 0.2s ease;
+   }
+
+   .job:before{
+   	content: ' ';
+   	width: 100%;
+   	height: 100%;
+   	position: absolute;
+   	top: 0;
+   	right: 0;
+   	bottom: 0;
+   	left: 0;
+    background-image: linear-gradient(#FBD72B , #F9484A);
+    z-index: -1;
+    opacity: 0.1;
+   }
+
+
+
+   .job-title{
+     font-size: 2rem;
+     margin-top: 2rem;
+   }
+
+   .job-company,.job-location{
+   	font-size: 1.6rem;
+   	color:  #1a1a1a;
+   	font-weight: 800;
+   	margin-top: 0.5rem;
+   }
+
+   .job-location{
+   	margin-top: 0.2rem;
+   }
+
+   .job-s{
+   	margin-top: 0.6rem;
+   	display: flex;
+   	align-items: center;
+   }
+
+       /*job money*/
+    .job-money-div,.job-type-div{
+       display: flex;
+       align-items: center;
+       color: #1a1a1a;
+       
+     }
+
+      .job-money-div p,.job-type-div p {
+           font-size: 1.5rem;
+           font-weight: 800;
+           margin-left: 0.5rem;
+      }
+
+     .job-money-div img{
+     	width: 20px;
+     }
+      /*end job money*/
+
+      /*job type*/
+      .job-type-div img{
+      	width: 19px;
+      	margin-left: 1rem;
+      }
+      /*end job type*/
+      
+     
+      /*job description*/
+      .desc{
+       margin: 1rem 0rem;
+       /*border: 2px solid black;*/
+       /*padding: 2.5rem;*/
+      }
+
+
+       .desc h2{
+       	font-size: 2.5rem;
+       	margin-top: 1rem;
+       	letter-spacing: 1px;
+       	border-bottom: 2px solid  #808080;
+       }
+
+      .job-description{
+      	/*color: #1a1a1a;*/
+      	font-weight: 800;
+        /*text-transform: capitalize;*/
+        font-size: 1.5rem;
+        line-height: 2rem;
+        letter-spacing: 0.5px;
+        margin-top: 1rem;
+       /* font-family: Georgia;*/
+      }
+
+      
+   
+
+      /*end job description*/
+      
+      /*job button*/
+      .job-button{
+      	display: flex;  
+      }
+
+
+      .job-button .descButton, .job-button .job-apply,.back button{
+       padding: 1rem;
+       border-radius: 40px;
+       cursor: pointer;
+       margin-left: 2rem;
+      border-color:transparent;
+       font-weight: 400;
+       letter-spacing: 1px;
+       margin-top: 1rem;
+       transition: 0.2s ease;
+       box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 2px 2px rgba(0,0,0,0.23);
+      }
+
+      .job-button .descButton{
+          background-color: orange;
+          z-index: 1000000;
+      }
+
+       .job-apply{
+      	background-color: #0059b3;
+      	 color: white;
+         z-index: 10000000;
+      }
+      
+      .job-button .descButton:hover,.job-button .job-apply:hover{
+      	transform: scale(1.2);
+      }
+
+      .job-apply-back{
+      background-color: #00cc7a;
+
+      }
+
+      /*end job button*/
+
+      /*back button*/
+      .back button {
+      	background-color: #0059b3; ;
+      	 color: white;
+         z-index: 10000000;
+      }
+      /*end back button*/
+	</style>
+</head>
+<body>
+
+	<div class="back">
+		<a href="index.html"><button>Back</button></a>
+	</div>
+
+	<div class="desc">
+		 <!-- job div -->
+
+                 			 <div class="job job1">
+
+                 			 	 <h1 class="job-title">Job Title</h1>
+                 			 	 <p class="job-company">Company Name</p>
+                 			 	  <p class="job-location">Location</p>
+
+                 			 	  <div class="job-s">
+                 			 	  	 <div class="job-money-div">
+                 			 	  	 	<img src="images/icons/money.png" alt="">
+                 			 	  	 <p class="job-money">Money</p>
+                 			 	  	 </div>
+                 			 	  	 <div class="job-type-div">
+                 			 	  	 	<img src="images/icons/job-type.png" alt="">
+                 			 	  	 	<p class="job-type">Type</p>
+                 			 	  	 </div>
+                               <div class="job-type-div">
+                              <img src="images/icons/job-type.png" alt="">
+                              <p class="job-exp">0 - 2 Years</p>
+                             </div>
+                 			 	  </div>
+                                 
+                                 
+                 			 	     
+                 			 	  <div class="desc">
+                 			 	  	<h2>Job Description</h2>
+                 			 	  	<p class="job-description">- We are looking for an Executive Assistant to perform a variety of administrative tasks and support our company’s senior-level managers.We are looking for an Executive Assistant to perform a variety of administrative tasks and support our company’s senior-level managers.We are looking for an Executive Assistant to perform a variety of administrative tasks and support our company’s senior-level managers.We are looking for an Executive Assistant to perform a variety of administrative tasks and support our company’s senior-level managers.We are looking for an Executive Assistant to perform a variety of administrative tasks and support our company’s senior-level managers.We are looking for an Executive Assistant to perform a variety of administrative tasks and support our company’s senior-level managers.We are looking for an Executive Assistant to perform a variety of administrative tasks and support our company’s senior-level managers.
+                 			 	  		Assistant to perform a variety of administrative tasks and support our company’s senior-level managers.
+                 			 	  		Assistant to perform a variety of administrative tasks and support our company’s senior-level managers.
+                 			 	  		Assistant to perform a variety of administrative tasks and support our company’s senior-level managers.
+                 			 	  <span id="points" class="points">.....</span>
+                 			 	  	</p>
+                 			 	  	
+                 			 	  </div>     
+                 			 	   <div class="job-button">
+                 			 	  	<button class="job-apply">Apply</button>
+                 			 	  </div>
+
+                 			 </div>
+                        <!-- end job div -->
+	</div>
+</body>
+</html>

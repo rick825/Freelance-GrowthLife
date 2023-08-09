@@ -1,0 +1,592 @@
+*{
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+	font-size: 10px;
+}
+
+body{
+	width: 100%;
+	height: 100%;
+	 font-family: 'Josefin Sans', sans-serif;
+     background-color: #cccccc;
+     overflow-y: hidden;
+}
+
+
+/*common */
+.profile-main{
+  display: flex;
+  height: 100%;
+  position: relative;
+  margin-top: 6rem;
+
+}
+
+.prof{
+	width: 50%;
+	height: 70rem;	
+}
+
+/*end common*/
+
+/*nav section*/
+#nav{
+	position: relative;
+   background-color: white;
+   z-index: 100000000;
+}
+.nav{
+	/*position: fixed;*/
+  padding: 1rem;
+  z-index: 1000000000;
+}
+
+.nav-head{
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 500;
+      font-size: 2.2rem;
+    align-items: center;
+    background-color: white;
+    z-index: 100000;
+    padding: 2rem;
+   }
+
+
+    .nav-head  a{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      color: black;
+    }
+
+   .nav-head  span {
+    display:flex;
+  width: 2rem;
+  height: 4rem;
+  background-color:  #0047b3;
+  margin-right: 1rem;
+   }
+/*end nav section*/
+
+/*profile main*/
+
+   /*profile left*/
+    .profile-left{
+    	width: 40%;
+      height: 68rem;
+    	padding: 0rem 10rem;
+   margin: 2rem 4rem;
+   margin-bottom: 4rem;
+    	display: flex;
+    	justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+      /*background: linear-gradient(to bottom, #ffffff 0%, #ffcc99 100%);*/
+      
+    }  
+
+    /*profile-left-top section*/
+
+    .ptb{
+
+    }
+
+    .profile-left-top{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+       border-radius: 20px;
+       padding: 1rem;
+    }
+
+    .profile-pic{
+    	width: 15rem;
+    	height: 15rem;
+    	border-radius: 50%;
+    	padding: 0.5rem;
+    	border: 0.5px solid black;
+    }  
+
+    .profile-pic img{
+    	width: 100%;
+    }
+
+    .profile-u-info{
+    	width: 100%;
+    	padding: 1rem;
+    	margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .profile-u-info .profile-name{
+      font-size: 2.5rem;
+      color:  #0059b3;
+      display: flex;
+    }
+
+    .profile-u-info .curr-loc,.profile-u-info .profile-rec-edu{
+      display: flex;
+      align-items: center;
+      /*margin-left: 5.5rem;*/
+    }
+
+     .profile-u-info .curr-loc h3,.profile-u-info .profile-rec-edu .rec-edu-info{
+       margin-left: 1rem;
+       font-size: 1.5rem;
+     }
+
+     .profile-u-info .curr-loc{
+      margin-top: 1rem;
+     }
+
+     .profile-left .profile-rec-edu .rec-edu-info{
+      margin-top: 1.3rem;
+     }
+
+      .profile-left .profile-rec-edu .rec-edu-info p{
+         font-weight: 600;
+         font-size: 1.2rem;
+      }
+
+      .profile-left .profile-rec-edu .rec-edu-info h3{
+         margin-top: 0.5rem;
+      }
+    
+    .profile-left .profile-u-info  img,.profile-left .profile-card img{
+         width: 20px;
+    }
+
+    /*end profile left top section*/
+
+    /*profile left bot section*/
+    .profile-left-bot{
+      width: 100%;
+      margin-top: 1rem;
+    }
+
+    /* accept and decline section*/
+
+   
+   .job-accdec{
+  width: 100%;
+  min-height: 5rem;
+  max-height: 10rem;
+  padding: 2rem;
+   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 -6px 6px rgba(0,0,0,0.23);
+   border-radius: 20px;
+   margin-top: 2rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+ }
+   .n-head h1{
+   font-size: 2rem;
+   }
+
+   
+   .job-accdec .n-head-lead{
+    display: flex;
+    align-items: center;
+   }
+
+   .job-accdec .n-profile .pn{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+   }
+
+   .job-accdec .n-profile .pn img{
+    width: 100%;
+   }
+
+   .job-accdec .n-head-lead button{
+     padding: 1rem;
+       border-radius: 40px;
+       cursor: pointer;
+       border-color:transparent;
+       font-weight: 400;
+       letter-spacing: 1px;
+       transition: 0.2s ease;
+       background-color:#14487C;
+       z-index: 1000000;
+       width: 100%;
+       color: white;
+       box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 2px 2px rgba(0,0,0,0.23);
+   } 
+
+   .job-accdec .n-button{
+    display: flex;
+    align-items: center;
+   }
+
+   .job-accdec .n-button .Accept button{
+    background-color: #00cc7a;
+   }
+
+    .job-accdec .n-button .Decline button{
+      background-color: #ff1a1a;
+      margin-left: 1rem;
+    }
+
+/*end accept and decline section*/
+
+   
+    /*end profile left bot section*/
+
+   
+
+
+
+   /*end profile left*/
+/*..........................................................*/
+   /*profile-right*/
+    .profile-right{
+    	width: 60%;
+      height: 68rem;
+      background-color: white;
+    margin: 2rem;
+    padding: 2rem 5rem;
+    overflow-y: scroll;
+    }
+
+    .profile-right .inforight{
+     width: 80%;
+     height: 90%;
+     /*padding: 2rem;*/
+     margin-top: 2%;
+    }
+
+    .info-head{
+    	 display: flex;
+    	 align-items: center;
+    }
+
+     .info-head img{
+     	width: 50px;
+     	margin-right: 1rem;
+     	filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+     }
+
+     /* Scrollbar Styling */
+.profile-right::-webkit-scrollbar {
+    width: 8px;
+}
+
+.profile-right::-webkit-scrollbar-track {
+    background-color: #ebebeb;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+
+}
+
+.profile-right::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 20px;
+    border-radius: 10px;
+  }
+
+.profile-right:hover::-webkit-scrollbar-thumb { background: #0059b3;}
+.profile-right::-webkit-scrollbar-thumb:horizontal:hover,
+.profile-right::-webkit-scrollbar-thumb:vertical:hover { background:  #0059b3; }
+
+.intro{
+  padding: 1rem;
+}
+
+     /*personal info*/
+.pinfo{
+ margin-top: 2.5rem;
+ padding: 1rem;
+}
+
+.pinfo img{
+  width: 68px;
+  margin-left: -1rem;
+}
+
+.pinfo .info-head h2{
+  margin-top: 0.5rem;
+}
+
+.pinfo-item{
+  width: 55%;
+   height: 100%;
+   padding: 2rem 0 1rem 0;
+      border-bottom: 1px solid #666666;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+.pinfo-cont{
+  width: 20rem;
+/*  margin-right:4rem;*/
+}
+
+.pinfo-head h1{
+  font-size:2rem;
+  letter-spacing: 1px;
+}
+
+.pinfo-cont h1{
+  letter-spacing: 1px;
+}
+
+
+/*end personal info*/
+
+    /*education*/
+    .education{
+      margin-top: 4rem;
+      padding: 1rem;
+    }
+
+
+     .ed-list,.ex-list{
+      margin-top: 1rem;
+     }
+
+     .ed-item,.ex-item{
+      height: 100%;
+      padding: 2rem 0;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #666666;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+     }
+
+     .ed-top,.ex-top{
+      border-bottom: none;
+     }
+
+     .ed-top h1,.ed-top #edu-course,.ed-top #edu-score{
+     border-bottom: 2px solid #666666;
+     }
+
+
+     .ed-top  .ed-item-head{
+      width: 15rem;
+     }
+
+
+    .ed-top .ed-item-cont{
+      width: 23rem;
+      font-size: 2rem;
+      margin-left: 4rem;
+    }
+
+    .ed-top #edu-score,.ex-top #exp-year{
+      margin-right:-2rem;
+    }
+
+     .ed-item-head{
+      width: 20rem;
+     }
+
+     .ed-item-head h1,.ex-item-head h1{
+       font-size: 2rem;
+       letter-spacing: 1px;
+     }
+
+     .ed-item-cont{
+      width: 25rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+     }
+
+     #edu-course,#exp-role{
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #1a1a1a;
+     }
+
+     #edu-clg{
+      margin-top: 0.8rem;
+      font-size: 1.4rem;
+  
+     }
+
+     .ed-matric .ed-item-cont h3{
+      margin-top: 0;
+     }
+
+     #edu-score,.#exp-year{
+      font-size: 1.8rem;
+     }
+
+
+    /*end education*/
+
+    /*experience*/
+    .Experience{
+      width: 60%;
+      margin-top: 4rem;
+      padding: 1rem;
+    }
+
+     .Experience .info-head h2{
+      margin-top: 1rem;
+    }
+
+    .ex-top h1,.ex-top #exp-year{
+     border-bottom: 2px solid #666666;
+     }
+
+
+
+     .ex-top #exp-year,.ex-top #exp-role{
+      font-size: 1.6rem;
+     }
+
+     .ex-item-head{
+      width: 8rem;
+      padding-bottom: 0.5rem;
+     }
+
+
+     .ex-top .ex-item-cont{
+      width: 5%;
+     }
+
+    
+
+
+    /*end experience*/
+
+
+     .profile-right .props{
+     }
+
+    .profile-right .inforight  h2{
+     font-size: 2.5rem;
+     letter-spacing: 1px;
+     margin-left: 1.5rem;
+      filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+     /*border-bottom: 1px solid #666666;*/
+    }
+
+    .profile-right .inforight .intro p{
+    	font-size: 1.8rem;
+    	font-weight: 600;
+    	letter-spacing: 0.5px;
+    	margin-left: 1rem;
+    	line-height: 2.5rem;
+    	color: #666666;
+    	border-bottom: 1px solid #666666;
+    	padding-bottom: 1rem;
+    	opacity: 1;
+      padding: 2rem;
+    	animation: rise 1s ease 1;
+    }
+
+    
+     .profile-right .Skills,.profile-right .Resume{
+     	margin-top: 4rem;
+     }
+
+    .profile-right .Skills h2{
+    	font-size: 2.3rem;
+    	/*margin-top: 6rem;*/
+    }
+
+    .profile-right .Skills .props-cont{
+    	/*list-style: none;*/
+    	font-size: 1.8rem;
+    	font-weight: 600;
+    	margin-left: 2.5rem;
+    	margin-top: 2.6rem;
+    	color: #666666;
+    	border-bottom: 1px solid #666666;
+    	padding-bottom: 1.5rem;
+    	animation: rise 1s ease 1;
+    }
+
+     .profile-right .Skills li{
+     	margin-top: 0.5rem;
+     }
+
+
+     .up-resume{
+     	margin-top:2rem;
+     }
+
+      .up-resume button{
+      		background-color: #e65c00; 
+      	 color: white;
+         z-index: 10000000;
+         border-radius: 10px;
+         padding: 1rem;
+         border-color: transparent;
+         cursor: pointer;
+      }
+
+    
+
+   /*end profile right*/
+
+/*end profile main*/
+
+/*keyframes*/
+@keyframes rise{
+	0%{
+		opacity: 0;
+	}
+
+	100%{
+		opacity: 1;
+	}
+}
+/*end keyframes*/
+
+
+/*mobile*/
+
+@media only screen and (max-width: 992px){
+  body{
+  overflow-y: scroll;
+  }
+
+.profile-main{
+  flex-direction: column;
+}
+
+.prof{
+  width: 100%;
+  height: 100%;
+}
+
+.profile-left{
+  margin: 0rem 0rem;
+  padding: 2rem;
+}
+
+.profile-right{
+  margin: 0.5rem 0rem;
+}
+
+
+ .profile-right .inforight{
+  width: 100%;
+ }
+
+
+
+
+}
+

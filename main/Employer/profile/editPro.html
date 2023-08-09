@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>EDIT Profile</title>
+	<link rel="stylesheet" href="editPro.css">
+	<link rel="stylesheet" href="profileMobile.css">
+	<style>
+		 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
+		 /*back button*/
+		 .back{
+         /* position: fixed;
+          left: 1rem;
+          top: 1rem;*/
+		 }
+
+      .btn button {
+      	background-color: #0059b3;
+      	 color: white;
+         z-index: 10000000;
+         border-radius: 10px;
+         padding: 1rem;
+         border-color: transparent;
+         cursor: pointer;
+         margin: 1rem;
+         transition: 0.2s ease;
+      }
+
+      .btn button:hover{
+      	transform: scale(1.1);
+      }
+      /*end back button*/
+	</style>
+</head>
+<body>
+
+	<section id="nav">
+		<div class="nav">
+			 <div class="back btn">
+		     <a href="profile.html"><button>Cancel</button></a>
+	       </div>
+	       <div class="nav-head">
+	       	<h1><a href=""><span> </span>Growth Life</a></h1>
+	       </div>
+		</div>
+	</section>
+
+	<!-- <h1> This file is under construction</h1> -->
+<section id="profile-main">
+	<div class="profile-main">
+
+           
+		<div class="profile-left prof">
+				 <h2 class="pleft-head">Edit Your Profile</h2>
+				<!-- profile left top division -->
+				 <form action="/action_page.php">
+			<div class="profile-left-top ptb">
+
+              <div class="profile-pic">
+              	<div class="profile-img">
+             	 <img src="icon/profile.png" alt="">
+             	 </div>
+             	    <div class="props-up up-photo">
+                  <input type="file" id="myPhoto" name="filename" accept="image/png, image/gif, image/jpeg" placeholder="Upload Your Photo">
+                   </div>
+               </div>
+
+                 <div class="profile-u-info">
+             	<div class="profile-name">
+                   <label for="name">Companies Name:</label>
+             		 <input type="text" id="myName" name="Name" placeholder="Enter Companies Name">
+             	</div>
+             	<div class="curr-loc">
+                   <label for="Loc"> Companies Location:</label>
+             		 <input type="text" id="myLoc" name="Loc" placeholder="Enter Companies Location">
+               	</div>
+
+                <div class="profile-rec-edu">
+             		<div class="pro rec-edu-info">
+             	  <label for="Company Field">Company Sector:</label>
+             		 <input type="text" id="company-sector" name="company-sector" placeholder="Company sector (eg. IT sector, Medical sector etc)"><br><br>
+             		
+             		</div>
+             	 </div>
+               </div>
+                
+             </div>
+             <div class="btn">
+             <button>Submit</button>
+              </div>
+           </form>
+              <!-- end profile left top division -->
+			</div>
+
+			<div class="profile-right prof">
+				<div class="inforight">
+          <form action="">
+				<div class="intro props">
+					<div class="info-head">
+						<img src="icon/desc.png" >
+						<h2>About</h2>
+					</div>
+					 <textarea placeholder="Type About  Your Company here ...." tabindex="5" required></textarea>
+				   </div>
+
+				     <div class="pinfo props">
+				   	 <div class="info-head">
+						  <img src="icon/pinfo.png">
+						  <h2>Personal Info</h2>
+					</div>
+					<div class="p-list props-cont">
+						<div class="pinfo-item">
+							<div class="pinfo-head">
+								<h1 >Phone</h1>
+							</div>
+							<div class="pinfo-cont">
+								<input type="Number" placeholder="Enter Your Phone Number">
+							</div>
+						</div>
+						<div class="pinfo-item ">
+								<div class="pinfo-head">
+								<h1>Email</h1>
+							</div>
+							<div class="pinfo-cont">
+							<input type="text" placeholder="Enter Your Email Id">
+							</div>
+						</div>
+					</div>
+				   </div>
+
+				    <div class="add props">
+					    <div class="info-head">
+						  <img src="icon/skil.png">
+						  <h2>Company Address</h2>
+					    </div>
+					    <div class="sh-list props-cont">
+					     <textarea placeholder="Type Companies Address here ...." tabindex="5" required></textarea>
+					   </div>
+				    </div>
+				      <div class="btn">
+             <button>Submit</button>
+              </div>
+             </form>
+ 
+				</div>
+			</div>
+			
+		</div>
+	</section>
+
+
+</body>
+</html>

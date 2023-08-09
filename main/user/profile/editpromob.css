@@ -1,0 +1,35 @@
+@media  only screen and (max-width: 650px){
+ 
+  .pleft-head{
+  top:4%;
+  }
+
+ .ed-top,.ex-top{
+ 	display: none;
+ }
+
+ .ed-item,.ex-item{
+ 	flex-direction: column;
+ 	justify-content: center;
+ }
+
+ .ed-item-score{
+      width: 50%;
+     }
+
+     .ed-item-head{
+     	width: 9.5rem;
+     }
+
+    .ex-item-head{
+    width: 19rem;
+    }
+
+      .ex-item1 .ex-item-cont ,.ex-item1 .ex-item-year{
+       margin-top: 1rem;
+      	margin-left: 0;
+      }
+
+}
+
+

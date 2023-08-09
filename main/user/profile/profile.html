@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Your Profile</title>
+	<link rel="stylesheet" href="profile.css">
+	<link rel="stylesheet" href="profileMobile.css">
+	<style>
+		 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
+		 /*back button*/
+		 .back{
+         /* position: fixed;
+          left: 1rem;
+          top: 1rem;*/
+		 }
+
+      .btn button {
+      	background-color: #0059b3;
+      	 color: white;
+         z-index: 10000000;
+         border-radius: 10px;
+         padding: 1rem;
+         border-color: transparent;
+         cursor: pointer;
+         margin: 1rem;
+         transition: 0.2s ease;
+      }
+
+      .btn button:hover{
+      	transform: scale(1.1);
+      }
+      /*end back button*/
+
+      /*edit profile button*/
+       .edit-profile{
+       	position: absolute;
+         z-index: 100000;
+         top: 125%;
+         left: 32%;
+       }
+
+       /*end edit profile button*/
+       @media  only screen and (max-width: 992px){
+       	 .edit-profile{
+       	 	top: 70%;
+        left: 70%;
+   }
+       }
+	</style>
+</head>
+<body>
+
+	<section id="nav">
+		<div class="nav">
+			 <div class="back btn">
+		     <a href="../index.html"><button>Back</button></a>
+	       </div>
+	       <div class="nav-head">
+	       	<h1><a href=""><span> </span>Growth Life</a></h1>
+	       </div>
+			<div class="edit-profile btn">
+				 <a href="editPro.html"><button>Edit profile</button></a>
+			</div>
+		</div>
+	</section>
+
+	<!-- <h1> This file is under construction</h1> -->
+<section id="profile-main">
+	<div class="profile-main">
+
+           
+		<div class="profile-left prof">
+				
+				<!-- profile left top division -->
+			<div class="profile-left-top ptb">
+
+                 <div class="profile-pic">
+             	 <img src="icon/profile.png" alt="">
+                 </div>
+
+                 <div class="profile-u-info">
+             	<div class="profile-name">
+             		<h2>Akash Kumar Das</h2>
+             	</div>
+             	<div class="curr-loc">
+             		<img src="icon/loc.png" alt="">
+                    <h3>Ranchi</h3>
+               	</div>
+                <div class="profile-rec-edu">
+             		<div class="profile-rec-edu-img">
+             			<img src="icon/clg.png" alt="">
+             		</div>
+             		<div class="pro rec-edu-info">
+             		<p>Bachelors Of Computer Application</p>
+             		<h3>Usha Martin University</h3>
+             		</div>
+             	 </div>
+               </div>
+
+             </div>
+              <!-- end profile left top division -->
+
+              <div class="profile-left-bot ptb">
+              	<div class="profile-left-bot-head">
+              		<img src="icon/card.png" alt="">
+              		<h2>Your Card</h2>
+              	</div>
+              	<div class="profile-card">
+
+        	<div class="card-top">
+        		<!-- <div class="card-logo">
+        			<img src="images/icons/user.png" alt="">			
+        		</div> -->
+        		<div class="cname">
+        			<p>Growth Life</p>			
+        		</div>
+        		</div>
+             
+             <div class="card-mid">
+                <div class="left-card">
+        		<div class="left-cont">
+        			<h2 id="name">Akash Kumar Das</h2>
+        			  <div class="curr-loc">
+             	         <img src="icon/loc.png" alt="">
+                              <h3>Ranchi</h3>
+               	      </div>
+                   
+             	      <div class="profile-email">
+             	      	 <div class="profile-email-img">
+             		      	<img src="icon/email.png" alt="">
+             	            </div>
+             		        <div class="pro profile-email-info">
+             		        <p>rickak825@gmail.com</p>
+             	       	 </div>
+             	      </div>  
+
+             	        <div class="profile-rec-edu">
+             		       <div class="profile-rec-edu-img">
+             		      	<img src="icon/clg.png" alt="">
+             	            </div>
+             		        <div class="pro rec-edu-info">
+             		        <p>Bachelors Of Computer Application</p>
+             	          	<h3>Usha Martin University</h3>
+             	       	 </div>
+             	      </div>   
+        			</div>	
+        			 <div class="profile-edu-bot">
+             	      	<p>User Card</p>
+             	      </div> 
+        		</div>
+        		<div class="right-card">
+        			<div class="profile-img">
+        				<img src="icon/profile.png" alt="">
+        			</div>
+        			 <div class="profile-id">
+             	        <h3>User Id:</h3>
+                        <h3 id="user-id">12345</h3>
+               	      </div>
+        			<div class="profile-qr">
+        				<img src="icon/qr.png" alt="">
+        			</div>
+        		</div>
+        		</div>
+        	</div>
+              </div>
+
+			</div>
+
+			<div class="profile-right prof">
+				<div class="inforight">
+
+				<div class="intro props">
+					<div class="info-head">
+						<img src="icon/desc.png" >
+						<h2>About</h2>
+					</div>
+					<p>- We are looking for an Executive Assistant to perform a variety of administrative tasks and support our company’s senior-level managers.- We are looking for an Executive Assistant to perform a variety of administrative tasks and support our company’s senior-level managers.</p>
+				   </div>
+
+				   <div class="pinfo props">
+				   	 <div class="info-head">
+						  <img src="icon/pinfo.png">
+						  <h2>Personal Info</h2>
+					</div>
+					<div class="p-list props-cont">
+						<div class="pinfo-item">
+							<div class="pinfo-head">
+								<h1 >Phone</h1>
+							</div>
+							<div class="pinfo-cont">
+								<h1 id="p-phone">+91 9693195907</h1>
+							</div>
+						</div>
+						<div class="pinfo-item ">
+								<div class="pinfo-head">
+								<h1>Email</h1>
+							</div>
+							<div class="pinfo-cont">
+								<h1 id="p-email">Rickak825@gmail.com</h1>
+							</div>
+						</div>
+						<div class="pinfo-item ">
+							<div class="pinfo-head">
+								<h1>Address</h1>
+							</div>
+							<div class="pinfo-cont">
+								<h1 id="p-add">R.P Boys Hostel Kathartoli
+								, Ranchi, Pin 834001</h1>
+							</div>
+						</div>
+					</div>
+				   </div>
+
+				   <div class="education props">
+				   	 <div class="info-head">
+						  <img src="icon/clg.png">
+						  <h2>Education</h2>
+					    </div>
+					    <div class="ed-list props-cont">
+
+					    <div class="ed-item ed-top">
+					    	<div class="ed-item-head">
+                         		<h1 id="edu-type">Education Type</h1>
+                         	</div>
+                         	<div class="ed-item-cont">
+                         		<h1 id="edu-course">Course & School/College/University</h1>
+                         	</div>
+                         	<div class="ed-item-score">
+                         		<h3 id="edu-score">Score(in %)</h3>
+                         	</div>
+					    </div>
+
+                         <div class="ed-item ed-pg">
+                         	<div class="ed-item-head">
+                         		<h1 id="edu-type">Post Graduation</h1>
+                         	</div>
+                         	<div class="ed-item-cont">
+                         		<p id="edu-course">Masters in Computer Application</p>
+                         		<h3 id="edu-clg">Ranchi University</h3>
+                         	</div>
+                         	<div class="ed-item-score">
+                         		<h1 id="edu-score">75%</h1>
+                         	</div>
+                         </div>
+
+                         <div class="ed-item ed-g">
+                         	<div class="ed-item-head">
+                         		<h1 id="edu-type">Graduation</h1>
+                         	</div>
+                         	<div class="ed-item-cont">
+                         		<p id="edu-course">Bachelors in Computer Application</p>
+                         		<h3 id="edu-clg">Usha Martin University, Ranchi</h3>
+                         	</div>
+                         	<div class="ed-item-score">
+                         		<h1 id="edu-score">75%</h1>
+                         	</div>
+                         </div>
+
+                          <div class="ed-item ed-inter">
+                         	<div class="ed-item-head">
+                         		<h1 id="edu-type">Intermediate</h1>
+                         	</div>
+                         	<div class="ed-item-cont">
+                         		<p id="edu-course">Science</p>
+                         		<h3 id="edu-clg">DAV Public School , Ranchi</h3>
+                         	</div>
+                         	<div class="ed-item-score">
+                         		<h1 id="edu-score">75%</h1>
+                         	</div>
+                         </div>
+
+                          <div class="ed-item ed-matric">
+                         	<div class="ed-item-head">
+                         		<h1 id="edu-type">Matriculation</h1>
+                         	</div>
+                         	<div class="ed-item-cont">
+                         		<h3 id="edu-clg">DAV Public School, Ranchi</h3>
+                         	</div>
+                         	<div class="ed-item-score">
+                         		<h1 id="edu-score">75%</h1>
+                         	</div>
+                         </div>
+
+					    </div>
+				   </div>
+
+				    <div class="Experience props">
+				   	   <div class="info-head">
+						  <img src="icon/edu.png">
+						  <h2>Experience</h2>
+					   </div>
+					   <div class="ex-list props-cont">
+
+					   	 <div class="ex-item ex-top">
+					    	<div class="ex-item-head">
+                         		<h1 id="exp-comp">Company</h1>
+                         	</div>
+                         	<div class="ex-item-cont">
+                         		<h1 id="exp-role">Role</h1>
+                         	</div>
+                         	<div class="ex-item-year">
+                         		<h3 id="exp-year">Experience(in Months)</h3>
+                         	</div>
+					    </div>
+
+					   	   <div class="ex-item ex-item1 ">
+                         	<div class="ex-item-head">
+                         		<h1 id="exp-comp">Company</h1>
+                         	</div>
+                         	<div class="ex-item-cont">
+                         		<h1 id="exp-role">Role Name</h1>
+                         	</div>
+                         	<div class="ex-item-year">
+                         		<h3 id="exp-year">Experience(in Months)</h3>
+                         	</div>
+                         </div>
+
+					   </div>
+				   </div>
+
+				    <div class="Skills props">
+					    <div class="info-head">
+						  <img src="icon/skil.png">
+						  <h2>Skills and Hobbies</h2>
+					    </div>
+					    <div class="sh-list props-cont">
+					   <ul>
+						 <li>Coding</li>
+						 <li>Java</li>
+						 <li>C++</li>
+						 <li>Reading Books</li>
+					   </ul>
+					   </div>
+				    </div>
+
+				    <div class="Resume props">
+					    <div class="info-head">
+						  <img src="icon/resume.png">
+						  <h2>Resumes</h2>
+					    </div>
+					   <div class="up-resume props-cont btn">
+					    <form action="/action_page.php">
+                          <input type="file" id="myFile" name="filename">
+                          <button>Submit</button>
+                          </form>
+					   </div>
+				    </div>
+ 
+				</div>
+			</div>
+			
+		</div>
+	</section>
+
+
+</body>
+</html>
